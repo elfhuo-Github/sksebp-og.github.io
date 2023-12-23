@@ -1,0 +1,171 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Skyrim Beautification Project - Cleaning</title>
+<meta name="keywords" content="Skyrim Beautification Project, Skyrim, Skyrim Cleaning">
+<meta name="description" content="Skyrim Cleaning">
+</head>
+
+<body link="#000000" vlink="#000000" alink="#000000" text="#000000" bgcolor="#FFFFFF">
+
+<center><div style="width: 1077px">
+
+<p align="center">
+<font face="Arial">
+<img border="0" src="../gfx/skyrim-top-14.jpg"></font></p>
+<p align="center"><font face="Arial">
+<a href="../le/index.htm">
+<img border="0" src="../gfx/button-white-home.jpg"></a>
+<a href="../mods/index.htm">
+<img border="0" src="../gfx/button-white-mods.jpg"></a>
+<a href="../mods/enb/index.htm">
+<img border="0" src="../gfx/button-white-ENB.jpg"></a>
+<a href="../tweaks/index.htm">
+<img border="0" src="../gfx/button-white-tweaks.jpg"></a>
+<img border="0" src="../gfx/button-black-cleaning.jpg">
+<a href="../faq/index.htm">
+<img border="0" src="../gfx/button-white-faq.jpg"></a>
+<a href="../gallery/index.htm">
+<img border="0" src="../gfx/button-white-gallery.jpg"></a><br>
+</font>
+</p>
+<p style="margin-right: 6px; margin-left: 6px"><font face="Arial"><br>
+<b><font size="6">File Cleaning</font></b></font></p>
+<p align="justify" style="margin-right: 6px; margin-left: 6px">
+<font face="Arial"><b>Info: </b>Some mods, 
+and even Bethesda's own official DLCs, contain deleted references. Aka. &quot;Dirty Edits&quot;. The DLCs 
+actually contain more dirty edits than all the mods combined. These &quot;dirty edits&quot; 
+are not causing any problem if Skyrim is run ONLY with the DLCs, and no mods. However, when mods are loaded, the dirty edits from the DLCs become problematic, and can cause crashes. A &quot;dirty edit&quot;, is when a mod or DLC, contains data that deletes an object in the world space. If only 
+<i>that</i> one specific 
+mod or DLC is loaded, this won't cause any problems. But if another mod has a 
+reference to that specific object that was deleted, the game will 
+most likely crash. <b>TES5Edit can &quot;undelete&quot; these objects, and disable 
+them instead, which makes references from other mods valid, and keeps the object 
+from appearing in the game at the same time. </b>TES5Edit can also clean 
+a lot of other minor issues, but those are not really important for stability. 
+If you have a lot of mods, you might be able to decrease loading time by 
+removing some double data, but it's a lot of work for a minor improvement. SBP only focus on cleaning 
+the &quot;dirty edits&quot;, but if you want to further 
+optimize, 
+check out this cleaning guide: (<a href="http://www.creationkit.com/TES5Edit_Cleaning_Guide_-_TES5Edit">LINK</a>)</font></p>
+<p align="justify" style="margin-right: 6px; margin-left: 6px">
+<font face="Arial">If you haven't done so already, download and install TES5Edit <b>(<a target="_blank" href="http://skyrim.nexusmods.com/mods/25859/?"><span style="text-decoration: none">LINK</span></a>)<br>
+</b>Unpack and copy the files to any directory, then make a shortcut to 
+&quot;TES5Edit.exe&quot;.</font></p>
+<p align="justify" style="margin-right: 6px; margin-left: 6px">&nbsp;</p>
+<hr>
+<p style="margin-right: 6px; margin-left: 6px"><b><font face="Arial" size="6">Update &amp; DLC Cleaning</font></b></p><hr>
+<p align="left" style="margin-right: 6px; margin-left: 6px"><font face="Arial">
+The official Skyrim update and the DLCs need to be cleaned individually before 
+any other mod can be cleaned.<br>
+<br>
+Clean the Update</font></p>
+<p align="left" style="margin-right: 6px; margin-left: 6px"><font face="Arial">
+<b>1 - </b>Start TES5Edit.exe<br>
+*Upon startup, TES5Edit will show a list of everything in the load-order, 
+including Skyrim.esm (The base game-data).<br>
+<b>2 - </b>Check only &quot;Skyrim.esm&quot; and &quot;Update.esm&quot;, and 
+click &quot;OK&quot;<br>
+*TES5Edit will start loading the selected data, and check all references, which 
+will take some time.<br>
+When 
+the message bar shows: &quot;Background Loader: finished&quot;, the process is 
+done.<br>
+<b>3 - </b>Now select all files, and right-click one of them. Select &quot;Apply Filter for 
+Cleaning&quot; from the menu.<br>
+*TES5Edit will start counting all records. This will 
+take some time as well. When done, TES5Edit shows a complete tree of all references.<br>
+<b>4 - </b>Mark the &quot;Update.esm&quot;, and DON'T MARK ANY OTHER FILES! Then 
+right-click, and select &quot;Undelete and Disable References&quot;.<br>
+*When done processing, TES5Edit will show a message about how many records that were changed.<br>
+<b>5 - </b>Close the program. (This will save the changes to the &quot;Update.esm&quot; 
+file)<br>
+<br>
+Clean the Dragonborn DLC, using almost the same method as with the Update.<br>
+<br>
+<b>1 -</b> Start TES5Edit again<br>
+<b>2 - </b>Check &quot;Skyrim.esm&quot;, &quot;Update.esm&quot; and &quot;Dragonborn.esm&quot;, 
+and click &quot;OK&quot;<br>
+<b>3 - </b>Select all files, and right-click one of them. Select &quot;Apply Filter for 
+Cleaning&quot; from the menu.<br>
+*TES5Edit will start counting all records again.<br>
+<b>4 - </b>Mark the &quot;Dragonborn.esm&quot;, and DON'T MARK ANY OTHER FILES! Then 
+right-click, and select &quot;Undelete and Disable References&quot;.<br>
+*When done processing, TES5Edit will show the message about how many records that were changed.<br>
+<b>5 - </b>Close the program. (Saving the changes to &quot;Dragonborn.esm&quot;)<br>
+<br>
+Clean the HearthFires DLC, using the same method as with the Dragonborn DLC.<br>
+<br>
+<b>1 -</b> Start TES5Edit again<br>
+<b>2 - </b>Check &quot;Skyrim.esm&quot;, &quot;Update.esm&quot; and &quot;HearthFires.esm&quot;, 
+and click &quot;OK&quot;<br>
+<b>3 - </b>Select all files, and right-click one of them. Select &quot;Apply Filter for 
+Cleaning&quot; from the menu.<br>
+*TES5Edit will start counting all records again.<br>
+<b>4 - </b>Mark the &quot;HearthFires.esm&quot;, and DON'T MARK ANY OTHER FILES! Then 
+right-click, and select &quot;Undelete and Disable References&quot;.<br>
+*When done processing, TES5Edit will show the message about how many records that were changed.<br>
+<b>5 - </b>Close the program. (Saving the changes to &quot;HearthFires.esm&quot;)<br>
+<br>
+Clean the Dawnguard DLC, using the same method as with the HearthFires &amp; 
+Dragonborn DLC.<br>
+<br>
+<b>1 -</b> Start TES5Edit again<br>
+<b>2 - </b>Check &quot;Skyrim.esm&quot;, &quot;Update.esm&quot; and &quot;Dawnguard.esm&quot;, 
+and click &quot;OK&quot;<br>
+<b>3 - </b>Select all files, and right-click one of them. Select &quot;Apply Filter for 
+Cleaning&quot; from the menu.<br>
+*TES5Edit will start counting all records again.<br>
+<b>4 - </b>Mark the &quot;Dawnguard.esm&quot;, and DON'T MARK ANY OTHER FILES! Then 
+right-click, and select &quot;Undelete and Disable References&quot;.<br>
+*When done processing, TES5Edit will show the message about how many records that were changed.<br>
+<b>5 - </b>Close the program. (Saving the changes to &quot;Dawnguard.esm&quot;)<br>
+<br>
+<b>Reference images: (Dragonborn used as example)</b><br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>&nbsp; 
+Cleaning of Dragonborn&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+Cleaning of HearthFires&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+Cleaning of Dawnguard</b><br>
+<img border="0" src="skyrim-cleaning-1.jpg" width="1065" height="158"><br>
+<br>
+<img border="0" src="skyrim-cleaning-3.jpg"><br>
+<br>
+<img border="0" src="skyrim-cleaning-4.jpg"></font></p>
+<p style="margin-right: 6px; margin-left: 6px">&nbsp;</p>
+<p style="margin-right: 6px; margin-left: 6px"><b><font face="Arial" size="6">Video 
+Tutorial</font></b></p>
+<p style="margin-right: 6px; margin-left: 6px"><font face="Arial">
+<iframe width="1065" height="599" src="https://www.youtube.com/embed/fw3g_N1jcZQ" frameborder="0" allowfullscreen></iframe></font></p>
+<p align="left" style="margin-right: 6px; margin-left: 6px"><font face="Arial"><br>
+<br>
+&nbsp;</font></p>
+<hr>
+<p style="margin-right: 6px; margin-left: 6px">
+<b><font size="7" face="Arial">- END OF LINE -</font></b></p><hr>
+<p align="center" style="margin-right: 6px; margin-left: 6px">
+<b>
+<font face="Arial" size="5"><br>
+</font>
+<font face="Arial" size="6">Skyrim is ready for launch!</font><font face="Arial" size="5"><br>
+*</font></b><font face="Arial" size="4"><i>If</i> the game crashes don't worry. 
+This happens sometimes at the very first launch because of inconsistency with game-cache.<br>
+Just start Skyrim again and everything will work just fine.</font><font face="Arial" size="5"><br>
+&nbsp;</font></p>
+<p align="center"><b><font face="Arial" size="5"><br>
+</font><font face="Arial" size="6">Check out the
+<a href="../gallery/index.htm">Galley</a> for art &amp; screenshots</font><font face="Arial" size="5"><br>
+&nbsp;</font></b></p>
+<p align="center">&nbsp;</p>
+<p align="center"><font face="Arial">
+<a target="_blank" href="https://mayhem-7.myspreadshop.com/">
+<img border="0" src="../m7/mayhem-7-ad-9-1.jpg"></a></font></p>
+<p align="center">&nbsp;</p>
+
+</div></center>
+
+</body>
+
+</html>
