@@ -1,0 +1,146 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>SSEBP - Texture Optimization Info</title>
+<meta name="keywords" content="Skyrim, SSEBP, Textures, Optimization">
+<meta name="description" content="Skyrim SE Texture Optimization Info">
+</head>
+
+<body link="#000000" vlink="#000000" alink="#000000" text="#000000">
+
+<center><div style="width: 1077px">
+
+<p align="center">
+<font face="Arial">
+<img border="0" src="../../gfx/skyrim-se-top.jpg"></font></p>
+<p align="center"><font face="Arial">
+<a href="../index.htm">
+<img border="0" src="../../gfx/button-white-home.jpg"></a>
+<a href="../mods/index.htm">
+<img border="0" src="../../gfx/button-white-mods.jpg"></a>
+<a target="_blank" href="../mods/enb/index.htm">
+<img border="0" src="../../gfx/button-white-ENB.jpg"></a>
+<a href="../tweaks/index.htm">
+<img border="0" src="../../gfx/button-white-tweaks.jpg"></a>
+<a href="../cleaning/index.htm">
+<img border="0" src="../../gfx/button-white-cleaning.jpg"></a>
+</font><a href="../faq/index.htm">
+<img border="0" src="../../gfx/button-white-faq.jpg"></a>
+<a href="../gallery/index.htm">
+<img border="0" src="../../gfx/button-white-gallery.jpg"></a></p>
+<p align="center">&nbsp;</p>
+<p align="center"><font face="Impact" size="7">TEXTURE OPTIMIZATION</font></p>
+<p align="left"style="margin-right: 6px; margin-left: 6px"><font face="Arial">
+Texture optimization is done to save video memory at <b>no visual quality-loss.</b> 
+This is done by several methods, individual for each texture and it's use. 
+Typically by converting diffuse-maps to BC1/BC7 - DXT1/DXT5, and rescaling normal-maps and specular-maps.</font></p>
+<p align="left"style="margin-right: 6px; margin-left: 6px"><font face="Arial">
+<b>Scaling:</b><br>
+Scaling textures according to the objects they cover, is more important than 
+scaling according to screen resolution, contrary to popular belief. It's true that if you have a 
+higher screen resolution, then you also need a bigger texture to cover the same 
+object, but proper scaling in relation to the specific object is still far more 
+important. As a rule of thumb, the texture size needed is twice the size of the 
+amount of pixels that the object takes of the screen when showing. (With lots of 
+exceptions of course)<br>
+<u>Example:</u> The texture for a mug. This object is rather small, and will 
+never take up a significant percentage of the screen. (Unless unusually 
+closely examined) An object this size doesn't need a texture size that matches 
+your screen resolution 
+to look perfect. You will not gain any quality improvement what so ever by using a 
+huge texture on a small object. The perfect texture size 
+for a mug, using a 4k monitor, will therefore not be a 4k texture, but rather 
+something like a 2k diffuse-map with 1k 
+normal-maps &amp; 1k specular-maps.<br>
+<u>Example:</u> The texture for a tree. This is a huge object, that can cover a 
+large percentage of the screen, even without showing the entire object. This 
+texture therefore needs to be bigger than your screen resolution. On a 4k monitor, the perfect size would 
+probably be 8-16k, depending on your system recourses and your eye for detail.<br>
+<b>Proper scaling:</b> The first and most important thing is to ensure that the 
+texture looks good at 100% size in 2D. Meaning, resize according to the quality 
+of the texture without thinking of the object. When 
+quality is perfect, then the size needs to be compared to the object. If still 
+too big (This rarely happens) then it can be downsized further.<br>
+This is unfortunately a very common issue with texture mods.
+A lot of mod authors (even Bethesda themselves) do a little &quot;cheating&quot; when 
+making HD textures. They take a 2k texture, and simply stretch it in Photoshop 
+to make it 4k. This is completely useless. A 4k texture that is made by 
+stretching a 2k texture, will look 100% identical in-game. Absolutely no 
+difference what so ever, not even a little. The only difference is that the 4k 
+texture wastes 4 times the amount of video memory. The reason they do it, is 
+because it looks better to state that the textures are 4k. A cheap little 
+marketing 
+trick, which unfortunately is very common. However, when 
+loaded into Photoshop, these &quot;fake&quot; HD textures are easily spotted, and can be downsized again without problems.</font></p>
+<p align="left"style="margin-right: 6px; margin-left: 6px"><font face="Arial">
+<b>Compression:</b><br>
+Another common mistake, is missing or wrong texture compression. If a texture is 
+compressed where it shouldn't be, or left uncompressed where it actually could be 
+optimized, the quality won't be optimal, and the mod may take up way more video memory than 
+needed. This is very common too.<br>
+Memory-usage by formats:<br>
+Uncompressed 32-bit ARGB 4k texture size = 64mb<br>
+Uncompressed 24-bit RGB 4k texture size = 44mb<br>
+BC7/DXT5 with alpha (transparency) 4k texture size = 22mb<br>
+BC1/DXT1 no alpha 4k texture size = 11mb<br>
+<b>Proper compression:</b> With hundreds of textures loaded at the same time, 
+quite a lot of video memory can be saved by having proper compression. However, 
+not all textures can be compressed without quality-loss, so it's very important 
+only to compress the right texture types, and to take pixel-size into consideration as 
+well.</font></p>
+<p align="left"style="margin-right: 6px; margin-left: 6px"><font face="Arial">
+<b>Texture types - Diffuse-maps:</b><br>
+These are textures that put an image on the surface of an object. They are 
+needed for every single object in the game, and are the most important textures. 
+Without a diffuse-map, the object would be all pink. This texture can <i>usually</i> 
+be compressed with BC1/DXT1 or BC7/DXT5 without any visual difference in the game. On a 
+close-up screenshot you <i>may,</i> or may not, notice a tiny difference (not 
+necessarily worse), but that's it.<br>
+<b>Texture types - Normal-maps:</b><br>
+These textures are light-pointers. They provide a map of how light should look 
+on the texture, making it look like a real surface, nut just a flat image 
+wrapped around an object. These typically needs to be either left uncompressed 
+or, depending on the object of use, compressed with BC7/DXT5.<br>
+<b>Texture types - Specular-maps:</b><br>
+These textures determine the amount of shine and where. Typically used to make 
+objects look wet, or to simulate a certain material. As these usually consist of 
+dot-like points and lines rather than large smooth ranges, BC7/DXT5 can be used in 
+99% of cases for these.</font></p>
+<p align="left"style="margin-right: 6px; margin-left: 6px"><font face="Arial">
+<b>Aim of SSEBP texture compression:</b><br>
+To save as much video memory as possible without loss of quality, minded for 
+1080p/2160p.<br>
+Example of a standard optimal texture set: 4k diffuse-map compressed with 
+BC1/BC7 - DXT1/DXT5, 2k normal-map compressed with BC7/DXT5/uncompressed, and 2k specular-map 
+with BC7/DXT5 compression.<br>
+*Optimal compression/scale varies depending on object size/type, the 
+original texture quality, and in-game use/location.</font></p>
+<p align="left"style="margin-right: 6px; margin-left: 6px"><font face="Arial">
+<b>Free texture software:</b><br>
+Intel Texture Works: (<a target="_blank" href="http://gametechdev.github.io/Intel-Texture-Works-Plugin/">LINK</a>)<br>
+*For editing dds textures in Photoshop (BC format)<br>
+Nvidia Texture Plug-in for Photoshop: (<a target="_blank" href="https://developer.nvidia.com/gameworksdownload#?dn=texture-tools-for-adobe-photoshop-8-55">LINK</a>)<br>
+*For editing dds textures in Photoshop (DXT format)<br>
+Nvidia Texture Tools Exporter: (<a target="_blank" href="https://developer.nvidia.com/nvidia-texture-tools-exporter">LINK</a>)<br>
+*For quick viewing textures from your desktop<br>
+Adobe Photoshop (LINK) is my strong personal preference, but GIMP is a 100% free and capable image tool: (<a target="_blank" href="https://www.gimp.org/">LINK</a>)</font></p>
+<p align="left"style="margin-right: 6px; margin-left: 6px">&nbsp;</p>
+<p style="margin-right: 6px; margin-left: 6px"><font face="Arial"><b>If you 
+notice in-game quality-loss caused by SSEBP texture optimization mods, 
+please let me know on Discord</b><br>
+<br>
+<br>
+&nbsp;</font></p>
+<p style="margin-right: 6px; margin-left: 6px">&nbsp;</p>
+<p align="center"><font face="Arial"><a target="_blank" href="http://www.mayhem-7.com/skyrim/">
+<img border="0" src="../../m7/mayhem-7-ad-11-1.jpg" width="745" height="440"></a></font></p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+
+</div></center>
+
+</body>
+
+</html>

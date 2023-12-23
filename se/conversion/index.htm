@@ -1,0 +1,198 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>SSEBP - Texture Optimization Info</title>
+<meta name="keywords" content="Skyrim, SSEBP, Textures, Optimization">
+<meta name="description" content="Skyrim SE Texture Optimization Info">
+</head>
+
+<body link="#000000" vlink="#000000" alink="#000000" text="#000000" bgcolor="#FFFFFF">
+
+<center><div style="width: 1077px">
+
+<p align="center">
+<font face="Arial">
+<img border="0" src="../../gfx/skyrim-se-top.jpg"></font></p>
+<p align="center"><font face="Arial">
+<a href="../index.htm">
+<img border="0" src="../../gfx/button-white-home.jpg"></a>
+<a href="../mods/index.htm">
+<img border="0" src="../../gfx/button-white-mods.jpg"></a>
+<a target="_blank" href="../mods/enb/index.htm">
+<img border="0" src="../../gfx/button-white-ENB.jpg"></a>
+<a href="../tweaks/index.htm">
+<img border="0" src="../../gfx/button-white-tweaks.jpg"></a>
+<a href="../cleaning/index.htm">
+<img border="0" src="../../gfx/button-white-cleaning.jpg"></a>
+</font><a href="../faq/index.htm">
+<img border="0" src="../../gfx/button-white-faq.jpg"></a>
+<a href="../gallery/index.htm">
+<img border="0" src="../../gfx/button-white-gallery.jpg"></a></p>
+<p align="center">&nbsp;</p>
+<p align="center"><font face="Impact" style="font-size: 30pt">LE TO SSE CONVERSION - INFO &amp; 
+GUIDE</font></p>
+<p align="left"style="margin-right: 6px; margin-left: 6px"><font face="Arial">
+Some Skyrim LE mods work flawlessly with Skyrim SE, but some require conversion 
+first. Converting an LE mod to SE is fairly easy, but it does take some time to 
+do it properly. The Nexus has plenty of conversions and patches, but not all of 
+them are done very 
+well. Making a conversion that <i>seem</i> to work is fast &amp; easy, but it can 
+cause unforeseen errors after a certain amount of in-game hours, and even 
+mess-up your savegame data. Making a proper conversion takes a while, but why 
+risk messing up your savegame file?<br>
+<br>
+Every single conversion/SE-patch in this guide has been made using the following method.
+<b>No shortcuts or exceptions.</b></font></p>
+<p align="left"style="margin-right: 6px; margin-left: 6px">&nbsp;</p>
+<p style="margin-right: 6px; margin-left: 6px"><font face="Impact" size="6">
+CONVERSION GUIDE</font></p>
+<p align="left"style="margin-right: 6px; margin-left: 6px"><font face="Arial">
+<b><font size="5">Requirements:</font></b><br>
+SSE Creation Kit (<a target="_blank" href="https://bethesda.net/">LINK</a>) 
+*Full installation guide (<a target="_blank" href="https://docs.google.com/document/d/1tqHhE5DDEiUhRqSP0Jd9llLEWqy86gg4cAWO4VKsgNY/edit">LINK</a>)<br>
+SSEEdit<b> 
+</b>(<a target="_blank" href="https://www.nexusmods.com/skyrimspecialedition/mods/164/?tab=files">LINK</a>)<br>
+Bethesda Archive Extractor (<a target="_blank" href="https://www.nexusmods.com/skyrimspecialedition/mods/974">LINK</a>)<br>
+SSE NIF Optimizer (<a target="_blank" href="https://www.nexusmods.com/skyrimspecialedition/mods/4089">LINK</a>)<br>
+NifSkope (<a target="_blank" href="https://github.com/niftools/nifskope/releases">LINK</a>)<br>
+&nbsp;</font></p>
+<p align="left"style="margin-right: 6px; margin-left: 6px"><font face="Arial">
+<b><font size="5">Preparation:</font></b><br>
+Open the Skyrim SE game-folder and edit &quot;CreationKit.ini&quot; with a notepad.<br>
+Make sure the following line is added, or you will not be able to open mods with 
+multiple dependencies:<br>
+<br>
+[General]<br>
+bAllowMultipleMasterLoads=1<br>
+<br>
+I also recommend adding the following line to make using the Creation Kit 
+significantly less annoying:<br>
+<br>
+[MESSAGES]<br>
+bBlockMessageBoxes=1<br>
+&nbsp;</font></p>
+<p align="left"style="margin-right: 6px; margin-left: 6px"><font face="Arial">
+<b><font size="5">Proper SSE Conversion:</font></b><br>
+First things first. Download the mod you want to convert. Create a folder named 
+&quot;Data&quot;, and unpack the mod into this folder, matching the structure of the Data 
+folder inside the Skyrim SE game-folder. (Don't delete the LE mod-file after 
+unpacking)<br>
+<b>Following, I will refer to this folder as the &quot;Conversion Data folder&quot;.</b> 
+You can now convert any file(s) needed before repacking the mod.<br>
+<b>Note:</b> If the mod ONLY contains textures, then no conversion is needed. 
+You can use the mod as you would use any SE mod.<br>
+<br>
+<b>ESP mod:</b><br>
+If the mod contains ESP file(s), then these must be updated form Form ID 43 to 
+Form ID 44. (Just changing the ID value in SSEEdit does NOT work)<br>
+Only the Creation Kit can properly do this.<br>
+1: Install the LE mod as you would usually install any SE mod. (Just don't 
+launch the game)<br>
+2: Start the Creation Kit and click the &quot;Load Master/Plugin Files&quot; button.<br>
+<img border="0" src="creation-kit-2.jpg"><br>
+Now you should see the Data window.<br>
+<img border="0" src="creation-kit.jpg"><br>
+3: Double-click the ESP file you want to convert (checking the box), then click 
+&quot;Set as Active File&quot; and finally click &quot;OK&quot;.<br>
+*The Creation Kit will automatically select and load any Masters/dependencies 
+needed for the ESP file.<br>
+The loading process will take some time. <b>When you see an error massage, just 
+click OK.</b> Loading a mod typically generates 5 to 10 error messages. It looks 
+crazy the first time, but just click OK to everything.<br>
+4: When the mod has been loaded, all you need to do is save the mod again. This 
+will generate error messages as well. Just click OK to everything.<br>
+That's it. The Creation Kit has now saved the ESP file using the new Form ID 
+format.<br>
+<b>*Note: </b>If you want to convert multiple ESP files, then you HAVE to close 
+and restart the Creation Kit in between every file. The Creation Kit saves a 
+bunch of cache that can cause problems if not cleared when switching files. 
+..Brilliant, I agree.<br>
+5: Copy the updated ESP file(s) into the conversion Data folder, and overwrite 
+the old ESP file(s).<br>
+6: Uninstall the LE mod again.<br>
+<br>
+<b>ESM mod:</b><br>
+If the mod contains an ESM file, then the form ID must be updated in this file 
+as well. Unfortunately you can't just load en ESM into the Creation Kit, so you 
+need to change it to an ESP file first, update the ESP with the Creation Kit, 
+and then change it back to ESM. ..Yes, brilliant.<br>
+1: Install the LE mod as you would install any SE mod. (Don't launch the game)<br>
+2: Start SSEEdit.<br>
+Select only the ESM file, then continue the loading process.<br>
+3: When the loader has finished, right click the mod and select &quot;Apply filter 
+for cleaning&quot;.<br>
+4: Wait .........<br>
+5: When the loader has finished, click the mod and select &quot;File Header&quot;.<br>
+<img border="0" src="sseedit-3.jpg"><br>
+6: Edit the &quot;Recorded Flags&quot; and set it to &quot;ESP&quot;.<br>
+7: Close SSEEdit. *It will automatically save the changes to the file.<br>
+8: Open the Skyrim SE game-folder, and open the Data folder.<br>
+9: Rename the ESM file to .esp instead.<br>
+10: Follow the process for updating ESP files to Form ID 44.<br>
+11: Use SSEEdit to change the flag back to ESM.<br>
+12: Rename the file back to .esm.<br>
+13: Copy the updated ESM file into the conversion Data folder, and overwrite the 
+old ESM file.<br>
+14: Uninstall the LE mod again.<br>
+<br>
+<b>BSA files:</b><br>
+If the mod contains a BSA (Bethesda Archive) file, then it has to be unpacked.<br>
+1: Start Bethesda Archive Extractor.<br>
+2: Drag'n'drop the BSA and extract everything into the conversion Data folder. 
+(Still keeping the correct file-structure)<br>
+3: Delete the BSA file. (Important - It's not only to save space. Skyrim will 
+CTD if an old BSA is present)<br>
+<br>
+<b>NIF Conversion:</b><br>
+All NIF files must be converted/optimized.<br>
+1: Start SSE NIF Optimizer.<br>
+2: Brows to the folder containing the NIF files. (BUT PAY ATTENTION TO WHAT KIND 
+OF NIF FILES)<br>
+<img border="0" src="nif-optimizer.jpg"><br>
+<b>Be very careful </b>to check &quot;Head Part Only&quot; when optimizing head parts 
+(Eyes, head, face-geom, hair), and leave it unchecked for ANY other file(s).<br>
+If a folder contains both &quot;head parts&quot; and &quot;non-head parts&quot;, then you need to 
+make a temporary folder and move all non-head parts out. Optimize the head 
+parts, then change settings and optimize the non-head parts. Now move the 
+non-head parts back into the original folder.<br>
+*The files WILL NOT WORK, if optimized with incorrect settings.<br>
+<br>
+<b>Invisible eye fix:</b><br>
+If the mod contains custom eye NIF files, with custom textures, then there is a 
+small chance that the eyes will be invisible in-game. IF this happens, you can 
+correct it with NifSkope.<br>
+*After converting the NIF files with SSE NIF Optimizer:<br>
+1: Start NifSkope.<br>
+2: Click the eyes and check all texture paths. Correct if incorrect, or change 
+to any texture you want.<br>
+3: In the Block List view, expand the highlighted line (The line gets 
+highlighted when selecting the eyes in the 3D window)<br>
+4: Select the NiAlphaPropert.<br>
+5: In the Block Detail view, change &quot;Flags&quot; to 4333 instead of whatever number 
+there already is.<br>
+6: Save and close.<br>
+<br>
+<b>Repacking:</b><br>
+Go to the Conversion Data folder, which now contains all the converted files. 
+Repack it into a zip/rar/7z package. This is your SSE mod.<br>
+<br>
+That's it.<br>
+<br>
+&nbsp;</font></p>
+<p style="margin-right: 6px; margin-left: 6px"><font face="Arial"><b>If you 
+notice any problems caused by an SSE conversion from the SSEBP guide, 
+please let me know on Discord</b><br>
+<br>
+&nbsp;</font></p>
+<p style="margin-right: 6px; margin-left: 6px">&nbsp;</p>
+<p align="center"><font face="Arial"><a target="_blank" href="http://www.mayhem-7.com/skyrim/">
+<img border="0" src="../../m7/mayhem-7-ad-11-1.jpg" width="745" height="440"></a></font></p>
+<p align="center">&nbsp;</p>
+
+</div></center>
+
+</body>
+
+</html>

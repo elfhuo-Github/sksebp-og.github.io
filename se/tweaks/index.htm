@@ -1,0 +1,1128 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Skyrim SE Beautification Project - Tweaks</title>
+<meta name="keywords" content="Skyrim, Tweaks, Settings, SSE INI files">
+<meta name="description" content="SSEBP - Tweaks and settings">
+</head>
+
+<body link="#000000" vlink="#000000" alink="#000000" text="#000000" bgcolor="#FFFFFF">
+
+<center><div style="width: 1077px">
+
+<p align="center">
+<font face="Arial">
+<img border="0" src="../../gfx/skyrim-se-top.jpg"></font></p>
+<p align="center"><font face="Arial">
+<a href="../index.htm">
+<img border="0" src="../../gfx/button-white-home.jpg"></a>
+<a href="../mods/index.htm">
+<img border="0" src="../../gfx/button-white-mods.jpg"></a>
+<a target="_blank" href="../mods/enb/index.htm">
+<img border="0" src="../../gfx/button-white-ENB.jpg"></a>
+<img border="0" src="../../gfx/button-black-tweaks.jpg">
+<a href="../cleaning/index.htm">
+<img border="0" src="../../gfx/button-white-cleaning.jpg"></a>
+<a href="../faq/index.htm">
+<img border="0" src="../../gfx/button-white-faq.jpg"></a>
+<a href="../gallery/index.htm">
+<img border="0" src="../../gfx/button-white-gallery.jpg"></a></font></p>
+<p align="center">&nbsp;</p>
+<p align="center"><font size="7" face="Impact">TWEAKS &amp; SETTINGS</font></p>
+<p align="left"style="margin-right: 6px; margin-left: 6px"><font face="Arial">
+The following changes are absolutely necessary for Skyrim to work properly with mods 
+installed. If you start 
+modding Skyrim before making these changes, the game 
+will most likely not make it past the main-menu before crashing.<br>
+<b><br>
+<font size="4">With the exception of number 5, these changes are absolutely necessary for Skyrim SE to work 
+with mods installed.</font></b><font size="4"><br>
+</font>
+<br>
+<b>1: </b>Drivers Settings<br>
+<b>2: </b>INI Settings<b><br>
+3: </b>Load-Order<br>
+<b>4: </b>FNIS<br>
+<b>5: </b>Windows (Optional)</font></p>
+<hr>
+<p style="margin-right: 6px; margin-left: 6px">
+<font size="6" face="Impact">1: DRIVER SETTINGS</font></p><hr>
+<p align="left"style="margin-right: 6px; margin-left: 6px">
+<font face="Arial">In order for the ENB to work properly, the games own anti 
+aliasing MUST be disabled.<br>
+Open the nVidia Control Panel, go to &quot;Manage 3D settings&quot; 
+and choose &quot;Program Settings&quot; and find Skyrim SE.</font></p>
+<p style="margin-right: 6px; margin-left: 6px">
+<font face="Arial">
+<img border="0" src="drivers.jpg"></font></p>
+<p style="margin-right: 6px; margin-left: 6px"><font face="Arial">
+<b>Set the following parameters:</b></font></p>
+<table border="1" width="60%">
+	<tr>
+		<td width="238"><b><font face="Arial">Absolutely necessary: </font></b></td>
+		<td>&nbsp;</td>
+	<tr>
+		<td width="238"><font face="Arial">
+		Anti aliasing - FXAA</font></td>
+		<td><font face="Arial">
+		Off</font></td>
+	</tr>
+	<tr>
+		<td width="238"><font face="Arial">
+		Anti aliasing - Gamma correction</font></td>
+		<td><font face="Arial">
+		Off</font></td>
+	</tr>
+	<tr>
+		<td width="238"><font face="Arial">
+		Anti aliasing - Mode</font></td>
+		<td><font face="Arial">
+		Off</font></td>
+	</tr>
+	<tr>
+		<td width="238"><font face="Arial">
+		Anti aliasing - Setting</font></td>
+		<td><font face="Arial">
+		Application-controlled</font></td>
+	</tr>
+	<tr>
+		<td width="238"><font face="Arial">
+		Anti aliasing - Transparency</font></td>
+		<td><font face="Arial">
+		Off</font></td>
+	<tr>
+		<td width="238"><b><font face="Arial"><br>
+		Recommended:</font></b></td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td width="238"><font face="Arial">
+		Threaded Optimization</font></td>
+		<td><font face="Arial">
+		On <font color="#FF0000">*ONLY if you have a multi-core CPU</font></font></td>
+	</tr>
+	<tr>
+		<td width="238"><font face="Arial">
+		Vertical sync</font></td>
+		<td><font face="Arial">
+		On</font></td>
+	</tr>
+</table>
+<p align="left"style="margin-right: 6px; margin-left: 6px"><font face="Arial">
+<b>The ENB uses it's own anti aliasing. Enabling the drivers AA at the same time 
+will result in weird errors like flickering textures, stutter, incorrect 
+brightness and missing effects. <br>
+</b>
+<br>
+*If you use AMD/Intel graphic card, use Google to find out how to apply 
+similar settings.</font></p>
+<p align="left"style="margin-right: 6px; margin-left: 6px">&nbsp;</p><hr>
+<p style="margin-right: 6px; margin-left: 6px"><font size="6" face="Impact">2: 
+INI SETTINGS</font></p><hr>
+<p align="left"style="margin-right: 6px; margin-left: 6px"><font face="Arial">
+Some settings in Skyrim cannot be set via the regular settings menu or the 
+launcher. The default available settings are actually VERY limited compared to 
+the amount of actual settings. All of these settings are stored in two files.<b> &quot;Skyrim.ini&quot; and &quot;SkyrimPrefs.ini&quot;.
+</b>Some of these settings can bring much better quality to the game, also, some mods require certain settings 
+to be set for them to work as intended.<br>
+<br>
+<b>The ini files are usually located here: &quot;C:\Users\(USERNAME)\Documents\My 
+Games\Skyrim Special Edition\&quot;.</b><br>
+Open each file with notepad<br>
+<br>
+<br>
+</font><b><font face="Arial" size="5">Skyrim.ini<br>
+</font><font face="Arial">Add/change the following lines:</font></b></p>
+<p align="left"style="margin-right: 6px; margin-left: 6px"><font face="Arial">
+[General]<font color="#FF0000">&nbsp; *Multiple mods need this to work 
+(Disables the invisible wall around the map)</font><br>
+bBorderRegionsEnabled=0<font color="#FF0000"><br>
+<br>
+</font>[General]&nbsp; <font color="#FF0000">*Enables alt-tab</font><br>
+bAlwaysActive=1<font color="#FF0000"><br>
+<br>
+</font>[General]&nbsp;
+<font color="#FF0000">*Add this only if you have a 
+multi-core CPU</font><br>
+iNumHWThreads=8<br>
+iHWThread6=7<br>
+iHWThread5=6<br>
+iHWThread4=5<br>
+iHWThread3=4<br>
+iHWThread2=3<br>
+iHWThread1=2<br>
+iAIThread3HWThread=5<br>
+iAIThread2HWThread=4<br>
+iAIThread1HWThread=3<br>
+bMultiThreadMovement=1<br>
+bUseThreadedParticleSystem=1<br>
+bUseThreadedBlood=1<br>
+bUseThreadedMorpher=1<br>
+bUseThreadedTempEffects=1<br>
+bUseThreadedTextures=1<br>
+bUseThreadedMeshes=1<br>
+bUseThreadedLOD=1<br>
+bUseThreadedAI=1<br>
+bUseHardDriveCache=1<br>
+<br>
+[Archive]<br>
+bInvalidateOlderFiles=1&nbsp; <font color="#FF0000">*Makes sure that newer files 
+take priority</font><br>
+<br>
+[Display]&nbsp;&nbsp; <font color="#FF0000">*Add these lines 
+if you want to change your Field of View. I personally like 90, but choose any FOV you like. 
+(default is 65)</font><br>
+fDefaultFOV=90<br>
+fDefaultWorldFOV=90<br>
+fDefault1stPersonFOV=90<br>
+fNearDistance=17.0000 <font color="#FF0000">&nbsp;*If you keep FOV at 65 instead 
+of changing to 90, don't change this number either. Keep it at it's original 
+value</font><br>
+<br>
+[Display]&nbsp; <font color="#FF0000">*Better shadow movement from 
+sunlight</font><br>
+fSunUpdateThreshold=1.5<br>
+<br>
+[Display]&nbsp; <font color="#FF0000">*Fixes an error where shadows flicker with slight movement</font><br>
+bDisableShadowJumps=1<br>
+<br>
+[Display]<font color="#FF0000">&nbsp; *Needed for Claralux</font><br>
+fFirstSliceDistance=4096<br>
+fSpecularLODStartFade=2500<br>
+fSpecularLODMaxStartFade=3000<br>
+<br>
+[Interface]<br>
+fBookOpenTime=200.0&nbsp;
+<font color="#FF0000">*Make books open faster. Not necessary, but recommended</font><br>
+<br>
+[BackgroundLoad]&nbsp;&nbsp;
+<font color="#FF0000">*Add this only if you have a 
+multi-core CPU</font><br>
+bBackgroundLoadLipFiles=1<br>
+bLoadBackgroundFaceGen=1<br>
+bUseMultiThreadedFaceGen=1<br>
+bBackgroundCellLoads=1<br>
+bLoadHelmetsInBackground=1<br>
+bUseMultiThreadedTrees=1<br>
+bUseBackgroundFileLoader=1<br>
+<br>
+[Animation]&nbsp;&nbsp; 
+<font color="#FF0000">*Add this only if you have a 
+multi-core CPU</font><br>
+bMultiThreadBoneUpdate=1<br>
+<br>
+[Grass]&nbsp;&nbsp; <font color="#FF0000">*Needed by most 
+grass mods</font><br>
+bAllowCreateGrass=1<br>
+bAllowLoadGrass=0<br>
+fGrassMaxStartFadeDistance=9000.0000<br>
+iMaxGrassTypesPerTexure=15<br>
+iMinGrassSize=40<br>
+<br>
+[Decals]&nbsp;&nbsp; 
+<font color="#FF0000">*Add this only if you have a 
+multi-core CPU</font><br>
+bDecalMultithreaded=1<br>
+<br>
+&#65279;[Decals] <font color="#FF0000">&nbsp;*Multiple mods need this to work</font><br>
+&#65279;uMaxSkinDecalPerActor=256<br>
+<br>
+[HAVOK]&nbsp;&nbsp;
+<font color="#FF0000">*Add this only if you have a 
+multi-core CPU</font><br>
+iNumThreads=4 <font color="#FF0000"> (This number should equal 
+how many cores your CPU has. With the maximum of 4)</font><br>
+<br>
+[Papyrus]&nbsp;&nbsp; <font color="#FF0000">*This setting will allow the game 2 
+seconds of extra loading time between cells. This will prevent script errors due 
+to engine stress</font><br>
+fPostLoadUpdateTimeMS=2000<br>
+<br>
+[Water] <font color="#FF0000">&nbsp;*Better 
+water-reflection</font><br>
+bReflectLODObjects=1<br>
+bReflectLODLand=1<br>
+bReflectSky=1<br>
+bReflectLODTrees=1<font color="#FF0000"><br>
+<br>
+&nbsp;</font></font></p>
+<p align="left"style="margin-right: 6px; margin-left: 6px"><b>
+<font face="Arial" size="5">SkyrimPrefs.ini<br>
+</font><font face="Arial">Add/change the following lines:</font></b></p>
+<p align="left"style="margin-right: 6px; margin-left: 6px"><font face="Arial">
+[General]&nbsp;&nbsp;
+<font color="#FF0000">*Add this only if you have a 
+multi-core CPU</font><br>
+bUseThreadedParticleSystem=1<br>
+bUseThreadedBlood=1<br>
+bUseThreadedMorpher=1<br>
+bUseThreadedTempEffects=1<br>
+bUseThreadedTextures=1<br>
+bUseThreadedMeshes=1<br>
+bUseThreadedLOD=1<br>
+bUseThreadedAI=1<br>
+bUseThreadedMorpher=1<br>
+<br>
+[BackgroundLoad]&nbsp;&nbsp;
+<font color="#FF0000">*Add this only if you have a 
+multi-core CPU</font><br>
+bBackgroundLoadLipFiles=1<br>
+bLoadBackgroundFaceGen=1<br>
+bUseMultiThreadedFaceGen=1<br>
+bBackgroundCellLoads=1<br>
+bLoadHelmetsInBackground=1<br>
+bUseMultiThreadedTrees=1<br>
+bUseBackgroundFileLoader=1<br>
+<br>
+[Display]&nbsp;&nbsp; <font color="#FF0000">*Change this lines if you changed 
+Field of View in the Skyrim.ini file. (default is 65)</font><br>
+fDefaultFOV=90<br>
+<br>
+[Display]&nbsp; <font color="#FF0000">*Needed for the ENB</font><br>
+bBorderless=1<br>
+bFull Screen=0<br>
+bFXAAEnabled=0<br>
+bUseTAA=0<br>
+<br>
+&#65279;&#65279;[Display]<font color="#FF0000">&nbsp; *Multiple mods need this 
+to work</font><br>
+&#65279;iMaxSkinDecalsPerFrame=512<br>
+<br>
+[Display]&nbsp; <font color="#FF0000">*Better shadows</font><br>
+fInteriorShadowDistance=8000.0000<br>
+fShadowDistance=5000.0000<br>
+iShadowMapResolution=8192<br>
+iShadowMapResolutionPrimary=8192<br>
+iShadowMapResolutionSecondary=8192<br>
+bDeferredShadows=1<br>
+fShadowBiasScale=0.1500<br>
+iBlurDeferredShadowMask=3<br>
+iShadowMaskQuarter=4<br>
+iShadowFilter=4<br>
+bTreesReceiveShadows=1<br>
+bDrawLandShadows=1<br>
+bDrawShadows=1<br>
+bShadowMaskZPrePass=0<br>
+iShadowMode=4<br>
+fShadowLODStartFade=400.0000<font color="#FF0000"><br>
+</font>
+<br>
+[Display]<font color="#FF0000">&nbsp; *Needed for Claralux</font><br>
+fLightLODStartFade=15000<br>
+fLightLODMaxStartFade=20000<br>
+<br>
+[Display]<br>
+iTexMipMapSkip=0<font color="#FF0000">&nbsp; *Speeds up HQ texture load</font><br>
+<br>
+[Decals]&nbsp;&nbsp; 
+<font color="#FF0000">*Add this only if you have a 
+multi-core CPU</font><br>
+bDecalMultithreaded=1<br>
+<br>
+&#65279;&#65279;[Decals]<font color="#FF0000">&nbsp; *Multiple mods need this to 
+work</font><br>
+&#65279;bSkinnedDecals=1<br>
+&#65279;uMaxSkinDecals=1024<br>
+<br>
+[Grass]<font color="#FF0000">&nbsp; *Multiple mods need this to work</font><br>
+fGrassStartFadeDistance=9000.0000<br>
+fGrassMaxStartFadeDistance=9000.0000<br>
+<br>
+[MAIN]&nbsp;&nbsp; <font color="#FF0000">*Quick-save and auto-save has a high 
+chance of corrupting save-game files. ALWAYS use regular save, never quick or 
+auto-save</font><br>
+bSaveOnPause=0<br>
+bSaveOnRest=0<br>
+bSaveOnTravel=0<br>
+bSaveOnWait=0<br>
+bDisableAutoSave=1<br>
+<br>
+[MAIN]&nbsp;&nbsp; <font color="#FF0000">*Helps minimize flickering textures</font><br>
+fSkyCellRefFadeDistance=400000.0000<br>
+<br>
+[TerrainManager]&nbsp;&nbsp; <font color="#FF0000">*Helps minimize flickering 
+textures</font><br>
+fBlockLevel0Distance=70000.0000<br>
+fBlockLevel1Distance=140000.0000<br>
+fBlockMaximumDistance=400000.0000<br>
+fSplitDistanceMult=3.0000<br>
+<br>
+[NavMesh]&nbsp; 
+<font color="#FF0000">*Add this only if you have a 
+multi-core CPU</font><br>
+bUseThreadedMeshes=1<br>
+<br>
+[Trees]&nbsp; 
+<font color="#FF0000">*Add this only if you have a 
+multi-core CPU</font><br>
+bUseMultiThreadedTrees=1<br>
+bShadowMaskZPrePass=1</font></p>
+<p align="left"style="margin-right: 6px; margin-left: 6px">&nbsp;</p>
+<p style="margin-right: 6px; margin-left: 6px"><font size="5" face="Arial">Launch the game and make sure everything works</font></p>
+<p style="margin-right: 6px; margin-left: 6px">&nbsp;</p>
+<hr>
+<p style="margin-right: 6px; margin-left: 6px"><font size="6" face="Impact">
+<a href="../mods/mods/index.htm"><span style="text-decoration: none">PROCEED TO 
+THE MOD-LIST</span></a></font><font face="Arial"><br>
+The rest of the tweaks &amp; settings are for after the mods have 
+been installed</font></p>
+<hr>
+<p style="margin-right: 6px; margin-left: 6px">&nbsp;</p>
+<p style="margin-right: 6px; margin-left: 6px">
+<font face="Arial">
+<a target="_blank" href="https://mayhem-7.myspreadshop.com/">
+<img border="0" src="../../gfx/mayhem-7-ad-014-800.jpg"></a></font></p>
+<p style="margin-right: 6px; margin-left: 6px">&nbsp;</p><hr>
+<p style="margin-right: 6px; margin-left: 6px"><font face="Impact" size="6">3: 
+LOAD-ORDER</font></p><hr>
+<p align="left"style="margin-right: 6px; margin-left: 6px"><font face="Arial">
+<b>Info: </b>The load-order is a list that determines in which order Skyrim 
+loads additional content (mods). The load-order has 255 slots which are loaded into the 
+memory one by one in the exact order they are listed, top to bottom. If identical data 
+appears (If two mods contain data in the same records), then the last mod 
+(furthest down), overwrites whatever came 
+before. Also, if a mod has references to another mod, this other mod HAS to be 
+listed in the load-order before the mod with the dependency. If a mod is 
+depending on something that is missing or listed later in the load-order, Skyrim 
+will either not load those mods, load them with errors, or not even start. Besides dependencies, some mods 
+also edit the same data, and the load-order dictates which data takes priority. 
+These &quot;conflicts&quot; can cause all kind of errors if the mods are not placed correctly. <b>Having a correct load-order is 
+absolutely necessary for the game to work with mods.<br>
+<br>
+If you didn't install all mods, but e.g. only installed the ones 
+without a colored square, then you won't find all these items in your own load-order. 
+Whenever an item is &quot;missing&quot;, just skip it, but keep everything else 
+in the exact same order from top to bottom.</b><br>
+<br>
+<b>Note: DON'T use Loot.</b> I know it's tempting to have a program sort the 
+whole thing, but unfortunately Loot isn't capable of sort the list correctly. You 
+can of course start by sorting with Loot, but then you NEED to correct the 
+load-order yourself afterwards.<br>
+&nbsp;</font></p>
+<p style="margin-right: 6px; margin-left: 6px"><font size="7" face="Impact">
+CORRECT LOAD-ORDER:</font><b><font size="5" face="Arial"><br>
+</font><font face="Arial" size="4">Start</font></b><font size="4" face="Arial"><b> NMM and click the &quot;Plugins&quot; tab. Then sort everything according to 
+this list<br>
+*Items with <font color="#FF0000">red</font> text should be unchecked (not 
+loaded)<br>
+</b><br>
+&nbsp;</font></p>
+<p align="left"style="margin-right: 6px; margin-left: 6px"><font face="Arial">
+Skyrim.esm<br>
+Update.esm<br>
+Dragonborn.esm<br>
+HearthFires.esm<br>
+Dawnguard.esm<br>
+Unofficial Skyrim Special Edition Patch.esp<br>
+Unofficial Skyrim Modders Patch.esp<br>
+Vanilla Script MicroOptimizations.esl<br>
+DwemerGatesNoRelock.esl<br>
+Navigator-NavFixes.esl<br>
+Landscape and Water Fixes.esp<br>
+Lightened Skyrim - merged.esp<br>
+SolstheimLighthouse.esl<br>
+WhiterunHoldForest.esp<br>
+Wyrmstooth.esp<br>
+Falskaar.esm<br>
+Dwarfsphere.esp<br>
+Vigilant.esm<font color="#FF0000">&nbsp; *Disable until you want to use the 
+Vigilant mod&nbsp; 
+**Run the FNIS tool once you enable it</font><br>
+VigilantHiResPackSE.els<font color="#FF0000">&nbsp; *Disable until you want to use the 
+Vigilant mod</font><br>
+Midwood Isle.esp<br>
+Penitus_Oculatus.esp<br>
+RigmorCyrodiil.esm<font color="#FF0000">&nbsp; *Disable until you want to use the 
+Rigmor of Cyrodill mod&nbsp; 
+**Run the FNIS tool once you enable it</font><br>
+AKSkyrimUnderground.esm<br>
+HammetDungeon01.esm<br>
+Vominheim.esm<br>
+RaceCompatibility.esm<br>
+Heel Sounds.esm<br>
+ApachiiHairMales.esm<br>
+ApachiiHairFemales.esm<br>
+ApachiiHair.esm<br>
+Expressive Facegen Morphs.esl<br>
+High Poly Head.esm<br>
+3DNPC.esp<br>
+OSA.esm<br>
+FlowerGirls SE.esm<br>
+FlowerGirls SE Threesome Fix.esl<br>
+ClimatesOfTamriel.esm<br>
+Undriel_FallingGildergreenPetals.esl<br>
+AnimatedHarvesting.esl<br>
+SleepTight.esp<br>
+Particle Patch for ENB SSE.esp<br>
+Modpocalypse NPCs (v3) Wyrmstooth.esp<br>
+WyrmstoothIntegration.esp<br>
+Falskaar - Fast Travel.esp<br>
+Falskaar - Boat Location.esp<br>
+Falskaar - Unique Region Names.esp<br>
+Falskaar - Bug Fixes.esp<br>
+Project AHO - Smelter Patch.esp<br>
+DwarfsphereImprovedPatch.esp<br>
+Project AHO Unofficial Patch.esp<br>
+Vigilant Voised.esp<font color="#FF0000">&nbsp; *Disable until you want to use the 
+Vigilant mod</font><br>
+Vigilant - Book Covers.esp<font color="#FF0000">&nbsp; *Disable until you want to use the 
+Vigilant mod</font><br>
+Vigilant CBBE Patch.esp<font color="#FF0000">&nbsp; *Disable until you want to use the 
+Vigilant mod</font><br>
+StendarrReplacer.esp<font color="#FF0000">&nbsp; *Disable until you want to use the 
+Vigilant mod</font><br>
+Midwood Isle Grass Patch.esp<br>
+Midwood Isle Ship Loc 1 Patch.esp<br>
+Midwood - Wyrmstooth spell consistency patch.esp<br>
+AKSkyrimUnderground_AddOn.esp<br>
+SkyrimUndergroundWritingPatch.esp<br>
+CBBE.esp<br>
+Dawnguard Dont Hunt Cured Vampires.esp<br>
+ImperialSoldiersEscortFix.esp<br>
+shalidor's maze fixes.esp<br>
+CrimeFactionAlikr.esp<br>
+Blacksmith Forge Water Fix SE USSEP.esp<br>
+wuunferth dialog test.esp<br>
+College of Winterhold Quest Start Fixes.esp<br>
+Durak Teleport Fix.esp<br>
+FloraRespawnFix.esp<br>
+GeirmundPullChain.esp<font color="#FF0000"><br>
+</font>HearthFires Display Case Fix SE.esp<br>
+fixLOD.esp<br>
+AnthorDragonFix.esp<br>
+Nilheim.esp<br>
+AudibleNPCDialogues.esp<br>
+Quest Conflict Fixes.esp<br>
+N89 Ragged flagon fil.esp<br>
+StalhrimSourceFix.esp<br>
+Dragonborn Delayed - After Horn Of Jurgen Windcaller.esp<br>
+Dawnguard Delayed - Level 30.esp<br>
+KS Hairdo's.esp<br>
+TerrainLodRedone.esp<br>
+Dragonsreach Balcony Landscape Fix.esp<br>
+HD Lods SSE.esp<br>
+SMIM-SE-ShackRoofFixes.esp<br>
+SMIM-SE-ShackRoofFixesDragonborn.esp<br>
+<font color="#FF0000">SMIM-SE-FarmhouseFlickeringFix.esp<br>
+SMIM-SE-SolitudeDocksFixes.esp<br>
+SMIM-SE-RiftenDocksRopesObjectFix.esp<br>
+SMIM-SE-FurnitureChestSnowFix.esp<br>
+SMIM-SE-DungeonsCliffsIceSkirts.esp<br>
+</font>SMIM_Merge.esp<br>
+HHrithgarPotFix14.esp<br>
+DepthsOfSkyrim.esp<br>
+Reverb and Ambience Overhaul - Skyrim.esp<br>
+SkyrimImprovedPuddles-DG-HF-DB.esp<br>
+Enhanced Vanilla Trees SSE.esp<br>
+Veydosebrom - Grasses and Groundcover.esp<br>
+Purewaters.esp<br>
+BirdsOfSkyrim_SSE.esp<br>
+Remove Hanging Moss From Trees.esp<br>
+Skyrim Better Roads - All In One - Merged.esp<br>
+Smoking Torches and Candles.esp<br>
+Simplicity of Snow.esp<br>
+Shaders of Solstheim.esp<br>
+SkyrimIsWindy.esp<br>
+TAVERiften.esp<br>
+RiverwoodEnhancedPlugin.esp<br>
+TAVESolitude.esp<br>
+TownsAndCitiesEnhanced.esp<br>
+WhiterunInEnhanced.esp<br>
+TAVEWindhelm.esp<br>
+TAVEMarkarth.esp<br>
+NoGrassINCaves.esp<br>
+NoGrassias.esp<br>
+Landscape Fixes For Grass Mods.esp<br>
+Landscape Seam Fixes.esp<br>
+Landscape and Water Fixes - Patch - LFfGM.esp<br>
+Complementary Grass Fixes.esp<br>
+Wolfskull Cave Fix.esp<br>
+Helsmyrr.esp<br>
+Falkreath_Bathhouse.esp<br>
+RavenRockBathhouse.esp<br>
+bathhouse.esp<br>
+Dibellan Baths.esp<br>
+Windhelm Royal Bath - AriusVault.esp<br>
+TheEvilMansionFE.esp<br>
+WyvernRock.esp<br>
+WyvernRockHearthfire.esp<br>
+RavenscaleCastle.esp<br>
+TimberSprings.esp<br>
+Cidhna Mine Expanded.esp<br>
+WhiteWatch.esp<br>
+Inns and Taverns.esp<br>
+HearthfireBathsAll.esp<br>
+Locked Chests Have Keys.esp<br>
+Missives.esp<br>
+TreasureHunter.esp<br>
+treasure_hunt.esp<br>
+DynamicTreasureMapJournal.esp<br>
+DynamicTreasureMapJournal - THunter.esp<br>
+DynamicTreasureMapJournal - NewHunt.esp<br>
+Sidequests of Skyrim.esp<br>
+Distinct Interiors.esp<br>
+aaaGraniteHill.esp<br>
+Dreamborne Islands.esp<br>
+Jewel Of Solstheim.esp<br>
+KarlovManorSSE.esp<br>
+KelRiiTemple.esp<br>
+HHLights.esp<br>
+Maelstrom.esp<br>
+Maelstrom Jocelyn OP Makeover.esp<br>
+MagicalBlackreach.esp<br>
+Whistling Mine.esp<br>
+ModdorManoir.esp<br>
+NchuandZel_Lower.esp<br>
+Nordic Ruins of Skyrim.esp<br>
+MagicalCollegeofWinterhold.esp<br>
+College Of Winterhold - Quest Expansion.esp<br>
+ReturnToPelagiusMind.esp<br>
+Rigmor.esp<font color="#FF0000">&nbsp; *Disable until you want to use the Rigmor 
+of Bruuma mod&nbsp; 
+**Run the FNIS tool once you enable it</font><br>
+RigmorCyrodiilPatch.esp<font color="#FF0000">&nbsp; *Disable until you want to 
+use the Rigmor of Cyrodill mod&nbsp; **Run the FNIS tool once you enable it</font><br>
+River Rock Village.esp<br>
+Ryn's Alchemists Shack.esp<br>
+Ryn's Anise's Cabin.esp<br>
+Ryn's Brandy Mug Farm.esp<br>
+Ryn's GoldenGlow Estate.esp<br>
+Ryn's HollyFrost and HlaaluFarms.esp<br>
+Ryn's Karthspire.esp<br>
+Ryn's Loreius Farm.esp<br>
+Ryn's Merryfair Farm.esp<br>
+Ryn's Mistwatch Folly.esp<br>
+Ryn's Mistwatch Tower Fix.esp<br>
+Ryn's Sarethi Farm.esp<br>
+ShowersInInns.esp<br>
+The Great City of Falkreath.esp<br>
+The Distinct Great Falkreath Interiors.esp<br>
+The Great City of Morthal.esp<br>
+The Great City of Solitude.esp<br>
+USSEP -
+The Great City of Solitude Patch.esp<br>
+The Great City of Winterhold.esp<br>
+The Distinct Great Winterhold Interiors.esp<br>
+HillHouse.esp<br>
+HillHouseFlowerGirlPatch.esp<br>
+PaarthurnaxQuestExpansion.esp<br>
+riftrest.esp<br>
+Maraf.esp<br>
+White flower EN.esp<br>
+WhiteLighthouseSE.esp<br>
+SimplyKnock.esp<br>
+icepenguinworldmapclassic.esp<br>
+Saeri_AetherialCrown.esp<br>
+Book Covers Skyrim.esp<br>
+JS Dragon Claw AE - Wyrmstooth.esp<br>
+DibellaStatuesFixes.esp<br>
+MehrunesDistantLod.esp<br>
+NewStatueOfShalidorMagicLights.esp<br>
+New Vaermina Statue.esp<br>
+PraedysSkulls.esp<br>
+PotemaCrashFix.esp<br>
+RUSTIC SOULGEMS - Unsorted.esp<br>
+SkyUI_SE.esp<br>
+AutoKillMoveScreenshots.esp<br>
+RaceMenu.esp<br>
+RaceMenuPlugin.esp<br>
+iHUD.esp<br>
+Animals Swim.esp<br>
+UltimateArachnophobia.esp<br>
+Bathing in Skyrim - Main.esp<br>
+BISSE - Wyrmstooth.esp<br>
+BISSE - Falskaar.esp<br>
+Bathing in Skyrim - Seamless soap texture patch.esp<br>
+SoapRetex_BIS.esp<br>
+Believable Crime Report Radius.esp<br>
+Fixed body collision.esp<br>
+MannequinStayPut.esp<br>
+NARC SE for Falskaar.esp<br>
+RaceCompatibilityUSKPOverride.esp<br>
+Race Compatibility Dialogue SSE.esp<br>
+Race Compatibility Dialogue SSE - Falskaar.esp<br>
+Race Compatibility Dialogue SSE - Project AHO.esp<br>
+ProjectAHO - StartWhenYouWant.esp<br>
+XPMSE.esp<br>
+LazyTools.esp<br>
+RaceMenuHH.esp<br>
+FNIS.esp<br>
+FNISspells.esp<br>
+Animated Dragon WingsSE.esp<br>
+Disable Turn Animation.esp<br>
+Better Females - Eyebrows.esp<br>
+SGEyebrows.esp<br>
+Improved Eyes Skyrim.esp<br>
+TheEyesOfBeauty.esp<br>
+TW3Eyes.esp<br>
+BVFE.esp<br>
+Followers Don't Draw Weapons.esp<br>
+No More Standing Too Close SSE 1-0.esp<br>
+dD-No Spinning Death Animation.esp<br>
+ImGladYoureHere.esp<br>
+SuccubusRaceLite.esp<br>
+Succubus High Poly Head.esp<br>
+TemptressVixen.esp<br>
+Temptress High Poly Head.esp<br>
+CobbVampShade.esp<br>
+No More Ugly Effects SE.esp<br>
+Teach Followers Spells.esp<br>
+Weapons Armor Clothing &amp; Clutter Fixes.esp<br>
+WACCF_BashedPatchLvlListFix.esp<br>
+USMP - WACCF patch.esp<br>
+WACCF - Hooded Skeleton Corpse Fix.esp<br>
+aMidianborn_Skyforge_Weapons.esp<br>
+ElvenSilver Dagger.esp<br>
+shieldsoftheholds.esp<br>
+FS_UltimateAssortment.esp<br>
+WeaponsOf3E_SSE.esp<br>
+<font color="#FF0000">KCEBattleClaws.esp<br>
+SPOAsilverknight.esp<br>
+SPOA_shield.esp<br>
+CrimsonTwilightArmor.esp<br>
+ScarletDawnArmor.esp<br>
+NS_Eilhart_Dress.esp<br>
+</font>Armor_Merge_1.esp<br>
+JS Barenziah SE - Johnskyrim.esp<br>
+zzzUnderwear.esp<br>
+LustmordVampireArmor.esp<br>
+KSA_vdk.esp<br>
+Merta Assassin Armor.esp<br>
+Merta Black Rose Armor.esp<br>
+<font color="#FF0000">DX Dark Knight Shield.esp<br>
+DX Dark Knight Armor.esp</font><br>
+DX Dark Knight Armor &amp; Shield.esp<br>
+Daring Demon Hunter.esp<br>
+Daughters of Dimitrescu.esp<br>
+Celes Nightingale Armor.esp<br>
+Crimson Blood Armor.esp<br>
+[NINI] Deified.esp<br>
+H2135FantasySeries8 [SE].esp<br>
+[AMI] H2135 Fantasy Series 8.esp<br>
+[dint999] MysteriousKnightSet.esp<br>
+Twilight Princess Armor.esp<br>
+DX Witcher Armor.esp<br>
+DCR_KingCrusaderMegaPack_SSE.esp<br>
+BDE_Armor.esp<br>
+[COCO] Scarlet Rose.esp<br>
+<font color="#FF0000">Daedric Chainmail - CBBE(SSE)Bodyslide.esp<br>
+Justice Glass Armor.esp<br>
+Justice Stalhrim Armor.esp<br>
+Skysan_GlassAW.esp<br>
+Skysan_Stalhrim.esp<br>
+</font>Armor_Merge_2.esp<br>
+TeraBerserker.esp<br>
+TeraRogueCBBE.esp<br>
+TeraSuccubusArmor.esp<br>
+TheAmazingWorldOfBikiniArmor.esp<br>
+TaWoBA Skyforge Fixes.esp<br>
+TAWOBA LL No Chance Topless.esp<br>
+VampireLeatherArmorSet.esp<br>
+Witch Of The Wild.esp<br>
+C5Kev's Black Bandit Armor 3BA.esp<br>
+[SunJeong] Charles Rene.esp<br>
+DX Fetish Fashion Volume 1 SE.esp<br>
+DX FetishFashion II.esp<br>
+PeroPeroArmorPackSE.esp<br>
+<font color="#FF0000">Black Rose.esp<br>
+[SunJeong] Nausicaa Lingerie.esp<br>
+QueenRxBikiniD.esp<br>
+UNP Undies.esp<br>
+HentaiVoidArmor.esp<br>
+Aradia Lace Dress.esp<br>
+Aradia Lingerie Dress.esp<br>
+</font>Armor_Merge_3.esp<br>
+[COCO] CaressofVenus.esp<br>
+[COCO]wedding_2B.esp<br>
+[COCO]Anaconda.esp<br>
+[COCO] Pinup Cheongsam.esp<br>
+[COCO] Shadow Assassin.esp<br>
+Flyin Dance SE.esp<br>
+Winter Snow Dress.esp<br>
+Sharpen Other Swords II.esp<br>
+Populated Skyrim Prisons Cells.esp<br>
+Populated Solstheim.esp<br>
+ICNs_ImmersiveCollegeNPCs.esp<br>
+seedymerchant.esp<br>
+Redguard Follower Set.esp<br>
+Aliya Follower CBBE MERGED.esp<br>
+CS_Anaka.esp<br>
+(SDZ21) Andromeda Follower.esp<br>
+Arien.esp<br>
+Armana.esp<br>
+Athenyaa Athos.esp<br>
+BlackRose.esp<br>
+HouseMansion.esp<br>
+Milante.esp<br>
+Dvorec.esp<br>
+Calista Summerstar.esp<br>
+(SDZ21) Christine Follower.esp<br>
+_MelissaX.esp<br>
+Demonic Sisters Followers.esp<br>
+DJQZafira.esp<br>
+Ella Follower.esp<br>
+FollowerEmily.esp<br>
+YuiH StandAlone Follower - Eva.esp<br>
+HOBEveline.esp<br>
+MBWSYNFollowersACT2.esp<br>
+Freya.esp<br>
+GK-Orcfollowers.esp<br>
+GKRedguard.esp<br>
+Hunters.esp<br>
+Inuel.esp<br>
+(SDZ21) IreneFollower.esp<br>
+Isabelle Follower.esp<br>
+(SDZ21) Jasmine Follower.esp<br>
+KamilahFollower.esp<br>
+Kellece.esp<br>
+Khalia Follower.esp<br>
+Khorah Orc Follower.esp<br>
+Lady Arkay.esp<br>
+Andromeda.esp<br>
+Lendri.esp<br>
+Skix Follower Lilla.esp<br>
+Skix Follower Luzie.esp<br>
+_VK_Mai.esp<br>
+AZ_MaiaFollower.esp<br>
+Marie A Redhead Follower 0.9.esp<br>
+MillaMilova.esp<br>
+CS_Mornhilde.esp<br>
+(SDZ21) Natasha Follower.esp<br>
+Nicky.esp<br>
+Paris Nyr - Standalone Follower - CBBE 3BA.esp<br>
+SassyTeen.esp<br>
+Seductress Elizabeth.esp<br>
+SnowFollower.esp<br>
+Unicorn.esp<br>
+(SDZ21) Valentine Follower.esp<br>
+Vanmoriel_Standalone_Follower.esp<br>
+Victoria Velina Revamped.esp<br>
+(SDZ21) Violet Follower.esp<br>
+Vorgha.esp<br>
+Immersive Wenches.esp<br>
+Immersive Wenches -KS hairs- Patch.esp<br>
+Deadly Wenches.esp<br>
+UgWenchesBegone.esp<br>
+ImmersiveWenchesPlayerDialogueRewritten.esp<br>
+3DNPC0.esp<br>
+3DNPC1.esp<br>
+Kai_3DNPC-WACCF_Patch.esp<br>
+Cuyima 3DNPC - Redone.esp<br>
+Race Compatibility Dialogue SSE - Interesting NPCs.esp<br>
+Modpocalypse NPCs (v3) SSE.esp<br>
+Hammets Dungeons1 - 3DNPC Patch.esp<br>
+Project AHO - 3DNPC.esp<br>
+3DNPC - Vigilant Patch.esp<font color="#FF0000">&nbsp; *Disable until you want to use the 
+Vigilant mod</font><br>
+PAN_NPCs_Males.esp<br>
+PAN_NPCs_Males2.esp<br>
+TKAA.esp<br>
+Falskaar TKAA Patch.esp<br>
+Rigmor TKAA Patch.esp<font color="#FF0000">&nbsp; *Disable until you want to use 
+the Rigmor mod</font><br>
+3DNPC TKAA Patch.esp<br>
+Taarie and Endarie Re-Imagined.esp<br>
+KaliliesNPCs.esp<br>
+PAN_Sovngarde.esp<br>
+PAN_NPCs.esp<br>
+PAN_NPCs_DB.esp<br>
+PAN_NPCs_DG.esp<br>
+IB - All-in-One.esp<br>
+<font color="#FF0000">Adrianne.esp<br>
+Carlotta.esp<br>
+Hulda.esp<br>
+Idgrod the younger.esp<br>
+Ingun.esp<br>
+Irileth.esp<br>
+Lisette.esp<br>
+Maven.esp<br>
+Rikke.esp<br>
+Sapphire.esp<br>
+Tonilia.esp<br>
+</font>Bijin_Merge.esp<br>
+Josephine - Replacer of Irileth.esp<br>
+MigalsHousecarlBeauties.esp<br>
+SBF Ingjard.esp<br>
+SBF Beleval.esp<br>
+<font color="#FF0000">SBF Adelaisa.esp<br>
+SBF Brelyna.esp<br>
+SBF DB-Inisiate.esp<br>
+SBF Eola.esp<br>
+SBF Frea.esp<br>
+SBF Illia.esp<br>
+SBF Jenassa.esp<br>
+SBF Jordis.esp<br>
+SBF Mjoll.esp<br>
+SBF Njada.esp<br>
+SBF Ria.esp<br>
+SBF Uthgerd.esp<br>
+SBF Aranea.esp<br>
+SBF Anneke.esp<br>
+SBF Aela.esp<br>
+SBF Borgakh.esp<br>
+</font>SBF_Merge.esp<br>
+PAN_Initiates.esp<br>
+NX_NPCs.esp<br>
+GLAM Senna.esp<br>
+HottIldari.esp<br>
+Khaliza of Gilane.esp<br>
+Lynn.esp<br>
+MBWSNPCReplace_karliahnohood.esp<br>
+VriTarlFollowerUgorReplacer.esp<br>
+Bandit Lines Expansion.esp<br>
+Civil War Lines Expansion.esp<br>
+Forsworn and Thalmor Lines Expansion.esp<br>
+Nilheim_MiscQuestExpansion.esp<br>
+Sleeping Expanded.esp<br>
+CarriageAndStableDialogues.esp<br>
+CharacterMakingExtender.esp<br>
+EnhancedCharacterEdit.esp<br>
+spelltomeconjureetherealhorse.esp<br>
+Hide and Seek Grants Sneak XP.esp<br>
+NPCs_Wear_Amulets_Of_Mara.esp<br>
+Run For Your Lives.esp<br>
+PositiveUndressedReactions.esp<br>
+Super Simple Needs.esp<br>
+SensualNeedsFG.esp<br>
+AmazingFollowerTweaks.esp<br>
+AFT - 3DNPC Patch.esp<br>
+Relationship Dialogue Overhaul.esp<br>
+RDO - AFT v1.66 Patch.esp<br>
+RDO Updated.esp<br>
+Hunters Not Bandits.esp<br>
+USMP - RDO patch.esp<br>
+Race Compatibility Dialogue SSE - RDO.esp<br>
+LovelyLetter.esp<br>
+OStim.esp<br>
+OpenSexScalingFix.esp<br>
+OHeels.esp<br>
+riftrestOS.esp<br>
+FlowerGirls_Replacer(NocturnalRobes).esp<br>
+SexLab-AmorousAdventures.esp<br>
+FlowerGirls SE - Adventures.esp<br>
+FlowerGirls SE - IW Patch.esp<br>
+AmorousPlayerDialogueRewritten.esp<br>
+FGMoreAdventures.esp<br>
+MoreAdventuresForOstim.esp<br>
+Flower Girls NPC Relationships.esp<br>
+RomanceOfNPCs.esp<br>
+Caught Red Handed - Quest Expansion.esp<br>
+deirdre_FG.esp<br>
+CRH_USSEP Patch.esp<br>
+sidequests_FGpatch.esp<br>
+COCO Scarlet Rose - Flower Girls SPID.esp<br>
+SeranaDialogAddon.esp<br>
+SDA-AA Patch.esp<br>
+SDA DX Crimson Blood Patch.esp<br>
+SDA Lustmord Patch.esp<br>
+PNCs_Wear_Amulets_Of_Mara - SDA Patch.esp<br>
+Race Compatibility - Serana Add-on Dialogue.esp<br>
+SDA RDO Patch.esp<br>
+RichMerchantsSkyrim_x5.esp<br>
+Ash Pile Expiration.esp<br>
+TougherTrolls.esp<br>
+FacelightPlus.esp<br>
+Grand Fireball.esp<br>
+<font color="#FF0000">zzVampireFaction.esp<br>
+BarenziahQuestMarkers.esp<br>
+JK Crafting Breakdown.esp<br>
+Craftable Torches.esp<br>
+Lost Art of the Blacksmith.esp<br>
+CarryWeight x100.esp<br>
+DibellasCompulsion-NudeSpell-1-1.esp<br>
+SpellTomeResurrectDead.esp<br>
+shorter_respawns.esp<br>
+</font>Final_Merge.esp<br>
+CraftingVoidSalt.esp<br>
+Master Trainers 100.esp<br>
+sweepingOrganizesStuff.esp<br>
+GriptzionTeleportMenuSpell_DLC.esp<br>
+SuperbSerana.esp<br>
+Better Candlelight.esp<br>
+Timescale3.esp<br>
+Realistic Melee Range.esp<br>
+Combat Evolved.esp<br>
+Sneak Tools (Minimal).esp<br>
+Deadly Damage.esp<br>
+DifficultyMCM.esp<br>
+Less Sniperlike NPCs 70 percent.esp<br>
+Customizable Camera.esp<br>
+CLARALUX SSE.esp<br>
+CLARALUX SSE - USSEP.esp<br>
+Ebonvale.esp<br>
+GhostLight.esp<br>
+Picta Series - ENB Particle Glow - Architecture.esp<br>
+Spider ENB Light.esp<br>
+Heartbeat.esp<br>
+HearthfireLight-Reshaped.esp<br>
+Blowing in the Wind SSE.esp<br>
+Blowing in the Wind - SMIM Merged All Patch SSE.esp<br>
+Blowing in the Wind - CLARALUX Patch SSE.esp<br>
+Remove Interior Fog.esp<br>
+ClimatesOfTamriel-Dragonborn-Patch.esp<br>
+ClimatesOfTamriel-Dawnguard-Patch.esp<br>
+ClimatesOfTamriel Falskaar.esp<br>
+Supreme Storms - Cot Version.esp<br>
+ExpandedSnowSystems-CoT.esp<br>
+CoT-WeatherPatch.esp<br>
+CoT-WeatherPatch_DB.esp<br>
+CoT-WeatherPatch_SupStorms.esp<br>
+CoT-WeatherPatch_ESS.esp<br>
+ESS Patch for CoT DG Patch.esp</font></p>
+<p align="left"style="margin-right: 6px; margin-left: 6px">&nbsp;</p>
+<p style="margin-right: 6px; margin-left: 6px"><font size="5" face="Arial">
+<b><br>
+</b>
+</font><font size="4" face="Arial">
+If you haven't already, run the <b>FNIS tool</b> a final time</font><b><font face="Arial" size="6"><br>
+The game is now fully modded and ready for launch!<br>
+&nbsp;</font></b></p>
+<p style="margin-right: 6px; margin-left: 6px">&nbsp;</p>
+<hr>
+<p style="margin-right: 6px; margin-left: 6px"><font face="Impact" size="6">4: 
+FNIS TOOL</font></p><hr>
+<p align="left"style="margin-right: 6px; margin-left: 6px"><font face="Arial">
+FNIS is a tool that applies character animation to the game. <b>Run FNIS every 
+time you add, remove or change a mod that contains animations.</b><br>
+<br>
+If 
+you haven't already done so, create a shortcut to the tool.<br>
+Open the Skyrim SE game-folder and open &quot;\Data\tools\GenerateFNIS_for_Users\&quot; and make a 
+shortcut to &quot;GenerateFNISforUsers.exe&quot;<br>
+<br>
+<b>Start the tool</b><br>
+<br>
+Check: &quot;GENDER Specific Animations&quot;<b><br>
+</b>Check: &quot;SKELETON Arm Fix&quot;<br>
+*Leave the rest unchecked<br>
+Then click: &quot;<b>Update FNIS Behavior</b>&quot; (See image below)<br>
+<img border="0" src="fnis.jpg" width="530" height="723"><br>
+When the tool has run it's process, click &quot;<b>Consistence 
+Check</b>&quot;.<br>
+You should now see the text &quot;0 possible consistence issues&quot;<br>
+Click &quot;<b>Exit</b>&quot;</font></p>
+<p align="left" style="margin-left: 6px; margin-right: 6px"><b>
+<font face="Arial" style="font-size: 17pt">IMPORTANT: Run this tool EVERY time you add/remove/change mods that contain </font></b>
+<font face="Arial"><b><font style="font-size: 17pt">animations.</font></b></font></p>
+<p align="left" style="margin-left: 6px; margin-right: 6px">&nbsp;</p>
+<p style="margin-left: 6px; margin-right: 6px">
+<a target="_blank" href="https://adultfriendfinder.com/go/g1425770-pct">
+<img border="0" src="../../gfx/aff/aff-h-10-850.jpg"></a></p>
+<p align="left"style="margin-right: 6px; margin-left: 6px">&nbsp;</p>
+<hr>
+<p style="margin-right: 6px; margin-left: 6px"><font face="Impact" size="6">5: 
+WINDOWS SETTINGS (OPTIONAL)</font></p>
+<hr>
+<p align="left"style="margin-right: 6px; margin-left: 6px"><font face="Arial">
+Having a fast and stable system is absolutely necessary to run a heavily modded 
+game. If you have a high-end system, you <i>should</i> have nothing to worry 
+about, even with all mods installed. If you have a semi-new or older medium-spec 
+system, it will definitely be put to the test.</font></p>
+<p align="left"style="margin-right: 6px; margin-left: 6px"><b>
+<font face="Arial">Optimizing Windows is a huge subject, so this isn't a 
+detailed tutorial, but rather some suggestions on how to give your games the 
+best possible conditions.</font></b></p>
+<p align="left"style="margin-right: 6px; margin-left: 6px"><font face="Arial">
+<b>1: </b>Make sure your system is virus/mal-ware free. (It's a given, but I'm 
+writing it anyway)<br>
+<b><br>
+2: </b>Have as few unnecessary programs running in the background as possible.<br>
+<b><br>
+3: </b>Never have real-time anti-virus programs running. 99% of anti-virus 
+software can and will significantly slow down any computer, all while doing an 
+extraordinarily poor job at protecting against viruses. The best way to protect 
+your computer against mal-ware and viruses, is by having a great firewall, 
+preferably at router level, so nothing gets to the computer in the first place.<br>
+<b><br>
+4: </b>If you use a software firewall on your computer (Not all routers have 
+great firewalls), then use one that doesn't require a lot of resources. Also 
+turn off the useless built-in Windows firewall &amp; services. I can recommend
+<a target="_blank" href="http://www.comodo.com/">Comodo</a> Firewall. It's free 
+and can be customized to use very little resources while doing a pretty decent 
+job.<br>
+<b><br>
+5: </b>Get rid of junk-driver-programs. Keep the drivers of course, but 
+uninstall or disable the useless services that constantly run in the background. 
+Like scanner, printer or audio &quot;service&quot; programs that comes with most drivers.<br>
+<b><br>
+6: </b>Get rid of junk-apps. Weather apps, search bars and joke apps etc., They 
+use your connection to bring you useless commercials and junk, which takes up 
+recourses.<br>
+<b><br>
+7: </b>Get rid of PunkBuster, if you have it. Go to services, and check if &quot;PnkBstrA&quot; 
+and/or &quot;PnkBstrB&quot; are running. If they are, stop and disable them. (Control 
+Panel -&gt; Administrative Tools -&gt; Services) *If you use Comodo Firewall, you can 
+block PunkBuster from ever being installed again, and prohibit execution of any 
+PunkBuster services. You would be surprised how many games that silently install 
+this garbage program. It's a good idea to check, even if you never installed 
+PunkBuster yourself.<br>
+<b><br>
+8: </b>Clean the temp-files. I can recommend
+<a target="_blank" href="http://www.piriform.com/ccleaner">CClean</a>. It's 
+free, and comes in both 32bit and 64bit versions.<br>
+<br>
+<b>9: </b>Check Windows start-up list and disable any and all useless junk 
+programs. I can recommend
+<a target="_blank" href="http://www.piriform.com/ccleaner">CClean</a> for this 
+too. (Tools - Startup)<br>
+<br>
+<b>10: </b>Clean Windows Task Scheduler. Get rid of the useless checks that 
+makes your system slow down at randomly when Windows hit a timer. (Control Panel 
+-&gt; Administrative Tools -&gt; Task Scheduler)<br>
+<br>
+<b>11:</b> Never ever use iTunes. Besides being the slowest, most incompatible 
+and absolute worst media player ever made, it will also decrease performance on 
+any system, and runs the weirdest background &quot;services&quot; at random. I would 
+recommend to stay away from any Apple products in general. No offence to 
+Apple-users, but Apple is simply just not capable of making quality software.<br>
+<br>
+<b>12:</b> Stop and disable useless background services. (Control Panel -&gt; 
+Administrative Tools -&gt; Services)&nbsp; *I made a recommended list: (<a target="_blank" href="../../win10fix/index.htm">LINK</a>)<br>
+<br>
+<b>13: </b>If you have a multi-core CPU, like a Core-i5, i7 or i9, disable Core 
+parking. (Google how, there are lots of guides)<br>
+<br>
+<b>14: </b>Always have the latest graphics card drivers installed. Don't use the 
+ones from Windows update. Get it from the manufactures website instead.<br>
+GeForce Drivers (<a target="_blank" href="https://www.nvidia.com/en-us/geforce/drivers/">LINK</a>)<br>
+AMD Drivers (<a target="_blank" href="https://www.amd.com/en/support">LINK</a>)<br>
+<br>
+<b>15: </b>Make sure that you have the latest drivers and redistributables 
+installed. List here: (<a target="_blank" href="../../win10fix/gaming/index.htm">LINK</a>)</font></p>
+<p style="margin-right: 6px; margin-left: 6px"><font face="Arial">
+<b><br>
+More Windows 10 specific tips:</b></font></p>
+<p style="margin-right: 6px; margin-left: 6px">
+<font face="Arial">
+<a target="_blank" href="../../win10fix/index.htm">
+<img border="0" src="../../gfx/win10-top-02-small.jpg"></a></font><br>
+&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">
+<font face="Arial">
+<a target="_blank" href="https://mayhem-7.myspreadshop.com/">
+<img border="0" src="../../gfx/mayhem-7-ad-007-900.jpg"></a></font></p>
+<p align="center">
+&nbsp;</p>
+<p align="center">
+<font face="Arial"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7422516056996691"
+     crossorigin="anonymous"></script>
+<!-- Standard Banner -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7422516056996691"
+     data-ad-slot="3101750998"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></font></p>
+<p align="center">&nbsp;</p>
+
+</div></center>
+
+</body>
+
+</html>
