@@ -4,11 +4,15 @@ This repository contains a reupload of the [Skyrim Beautification Project](https
 
 ## Credits
 
-The original site was created by [Tore Andersen](https://www.skyrim-beautification-project.com/about) and is available at [www.skyrim-beautification-project.com](https://www.skyrim-beautification-project.com/).
+The original site was created by [Tore Andersen](http://www.skyrim-beautification-project.com/support/index.htm) and is available at [www.skyrim-beautification-project.com](https://www.skyrim-beautification-project.com/).
 
 ## Purpose
 
-This reupload is intended for [provide a brief description of the purpose, such as archival or educational purposes]. If Tore Andersen wishes to take it down or has any concerns, please contact him directly.
+This reupload serves the purpose of archiving all the contents of the Skyrim Beautification Project website. If Tore Andersen wishes to take it down or has any concerns, please contact him directly.
+
+## Original About Page
+
+For more information about the Skyrim Beautification Project, you can visit the [original about page](http://www.skyrim-beautification-project.com/support/index.htm).
 
 ## Disclaimer
 
@@ -16,7 +20,7 @@ This repository is not intended for any commercial use, and all credit for the o
 
 ## Usage
 
-[Provide instructions on how to use or view the reuploaded site, if applicable.]
+To access the archived contents of the Skyrim Beautification Project, you can browse the repository files or visit the following link: [Reuploaded Skyrim Beautification Project](insert-link-here).
 
 ## Contact
 
