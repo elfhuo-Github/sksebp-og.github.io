@@ -1,0 +1,207 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<title>Windows 10 Fixes - Gaming Specific</title>
+<meta name="keywords" content="Windows 10, Fix, Fixes, Fixing Windows 10">
+<meta name="description" content="Fixes for Windows 10 - Gaming fixes">
+</head>
+
+<body link="#000000" vlink="#000000" alink="#000000" text="#000000" bgcolor="#FFFFFF">
+
+<center><div style="width: 1077px">
+
+<p align="center">
+<font face="Arial">
+<a target="_blank" href="http://www.skyrim-beautification-project.com/win10fix/gaming/cortana.jpg">
+<img border="0" src="../../gfx/win10-top.jpg"></a></font><b><font face="Arial" size="6"><br>
+</font> </b><font face="Arial">by Tore Andersen<br>
+<br>
+&nbsp;</font><p style="margin-right: 6px; margin-left: 6px">
+<font face="Impact" size="6">
+GAMING SPECIFIC FIXES</font></p>
+<p style="margin-right: 6px; margin-left: 6px">
+<font face="Arial">
+<a href="../index.htm">GENERAL TIPS</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+<a href="../services/index.htm">SERVICES</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+<a href="../cortana/index.htm">CORTANA</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+<b>GAMING SPECIFIC</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+<a href="../other/index.htm">OTHER FIXES</a></font></p>
+<p align="left" style="margin-right: 6px; margin-left: 6px">
+<font face="Arial">
+<br>
+The geniuses at Microsoft didn't think it would be necessary to launch Windows 
+10 with prerequisites for legacy gaming. (Games pre 2015) So all those runtimes 
+have to installed manually. On top of that, as a new &quot;feature&quot; in the Creators Update 
+for Windows 10, system 
+d3d files now take priority over local d3d files. This causes all 
+kinds of errors. Crashes, messed up graphics, extreme slowdowns, and 
+some games that won't launch. Shaders like ENB or ReShade have 
+a smaller chance of working after this &quot;update&quot;. The following steps 
+will fix that.<br>
+<b><br>
+1: Disable Game Mode<br>
+</b>Game Mode is just another useless OSD with some recording features. It 
+serves 
+no purpose, and it causes problems in several games.<br>
+Open settings and go to Gaming. Disable Game bar, Game DVR &amp; Game Mode.<br>
+<br>
+<b>2: Disable the &quot;Touch Keyboard and Handwriting Panel service&quot;</b><br>
+*This &quot;service&quot; causes several games to crash when 
+a 
+dialog-box is shown in-game. (See 'Services')<br>
+<br>
+<b>3: Stop &quot;Microsoft text input application&quot; from running in the background</b><br>
+*Same as with the above service, this task causes several games to crash.<br>
+Open the TaskManager, and End the &quot;Microsoft text input application&quot; task.<br>
+*If it starts up again right after shutting down, go to &quot;C:\Windows\SystemApps\&quot; and 
+rename the folder. &quot;MicrosoftWindows.Client.CBS_cw5n1h2txyewy&quot; to 
+&quot;MicrosoftWindows.Client.CBS_cw5n1h2txyewy.backup&quot;. This will prevent it from 
+launching again. Should you ever need this app, just rename the folder back to 
+it's original name again.<br>
+<br>
+<b>4: Stop &quot;Tablet Touch Input Panel&quot; from running in the background<br>
+</b>
+Use same method as number 3.<br>
+Open the TaskManager, and End the &quot;tabtip32.exe&quot; task.<br>
+*If it starts up again right after shutting down, go to &quot;C:\Program Files\Common 
+Files\microsoft shared\ink\&quot; and rename the file &quot;tabtip32.exe&quot; to 
+&quot;tabtip32.exe.backup&quot;. This will prevent it from 
+launching again. Should you ever need this app, just rename the folder back to 
+it's original name again.<br>
+<br>
+<b>5: Install the latest drivers and redistributables</b><br>
+<br>
+<b>Microsoft Visual C++ Redistributable</b> (<a target="_blank" href="https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170">LINK</a>)<br>
+*Install all versions (Both x86 and x64) from 2008 and newer<br>
+<br>
+<b>DirectX9 End-User Runtimes</b> (<a target="_blank" href="https://www.microsoft.com/en-us/download/details.aspx?id=8109">LINK</a>)<br>
+*This will not interfere with DirectX 10/11/12+<br>
+<br>
+<b>.NET Framework</b> (<a target="_blank" href="https://learn.microsoft.com/en-us/dotnet/framework/install/guide-for-developers">LINK</a>)<br>
+*Install all versions from 4.7.2 and newer<br>
+<br>
+<b>GeForce Drivers</b> (<a target="_blank" href="https://www.nvidia.com/en-us/geforce/drivers/">LINK</a>)<br>
+<b>AMD Drivers</b> (<a target="_blank" href="https://www.amd.com/en/support">LINK</a>)<br>
+<b><br>
+<br>
+This should be enough to run most games without any issues. However, if you have 
+issues when using ENB or ReShade, try installing RivaTuner:<br>
+<br>
+RivaTuner</b> (<a target="_blank" href="http://www.guru3d.com/files-details/rtss-rivatuner-statistics-server-download.html">LINK</a>)<font size="4"><br>
+</font>Download, unpack and run the installer.<br>
+*If the installer doesn't work, download this zip instead: (<a href="../RivaTuner_Statistics_Server_710_Final.zip">DOWNLOAD</a>) 
+*Unpack into the &quot;Program Files (x86)&quot; folder, and click the &quot;Reg.reg&quot; file.<br>
+<br>
+<b>Info: </b>RTSS Rivatuner Statistics Server is a small tool that forces 
+Windows 10 to use the d3d files from within the game-folders instead of inside 
+Windows's system folders. It needs to 
+run in the background while playing, but it only takes up about 8mb RAM and 0% CPU, 
+so you won't notice it's there.<br>
+<br>
+After installation, launch the tool. It will show as a blue-ish icon in the 
+notification area of the taskbar. Right click it and select &quot;Show&quot; for settings.<br>
+Turn off &quot;Show On-Screen Display&quot; and set Application detection to &quot;High&quot;. Set 
+both &quot;Stealth mode&quot; and &quot;Custom Direct3D support&quot; On. Then turn &quot;On-Screen 
+Display support&quot; Off. See image:<br>
+<br>
+<b>Use these setting, but set &quot;Frame limit&quot; to match your monitor:</b><br>
+<br>
+<img border="0" src="../rivatuner.jpg"><br>
+<br>
+Launch this small tool every time you want to play a game, or simply enable 
+&quot;Start with Windows&quot;.<br>
+&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p><font face="Impact" size="6">SUPPORT MAYHEM-7 MODS</font></p>
+
+<p align="center">
+<a target="_blank" href="https://www.patreon.com/mayhem7">
+<font color="#FFFFFF">
+<img border="0" src="../../gfx/support-top-02-small.jpg"></font></a></a></p>
+<p align="center">
+<img border="0" src="../../gfx/skyrim-free-forever-125.jpg">&nbsp;&nbsp; &nbsp;
+<a target="_blank" href="http://steamcommunity.com/id/777mayhem777/">
+<font color="#FFFFFF">
+<img border="0" src="../../gfx/steam-icon-125.jpg"></font></a>&nbsp; &nbsp;&nbsp;
+<a target="_blank" href="https://www.patreon.com/mayhem7">
+<font color="#FFFFFF">
+<img border="0" src="../../gfx/patreon-icon-125.jpg"></font></a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a target="_blank" href="https://discord.gg/p7KbE8e">
+<font color="#FFFFFF">
+<img border="0" src="../../gfx/discord-icon-125-white.jpg"></font></a>&nbsp;&nbsp; &nbsp;
+<a target="_blank" href="https://www.youtube.com/channel/UCVD3Mf8J-kyjOi9q_cl0Zng/videos">
+<font color="#FFFFFF">
+<img border="0" src="../../gfx/youtube-icon-125.jpg"></font></a>&nbsp;&nbsp; &nbsp;
+<a target="_blank" href="https://www.twitch.tv/777mayhem777">
+<font color="#FFFFFF">
+<img border="0" src="../../gfx/twitch-icon-125-white.jpg"></font></a>&nbsp;&nbsp; &nbsp;
+<a target="_blank" href="../../support/index.html">
+<font color="#FFFFFF">
+<img border="0" src="../../gfx/tip-jar-icom-125.jpg"></font></a><br>
+<br>
+<a target="_blank" href="https://www.deviantart.com/mayhem-7/gallery">
+<font color="#FFFFFF">
+<img border="0" src="../../gfx/deviant-icon-125-white.jpg"></font></a>&nbsp;&nbsp;&nbsp;&nbsp;
+<font color="#FFFFFF">
+<a target="_blank" href="https://opensea.io/mayhem-7?search[sortBy]=PRICE&search[sortAscending]=false">
+<img border="0" src="../../gfx/opensea-125-white.jpg"></a></font></a>&nbsp;&nbsp; &nbsp;
+<a target="_blank" href="https://www.instagram.com/777mayhem777/">
+<font color="#FFFFFF">
+<img border="0" src="../../gfx/instagram-icon-125-white.jpg"></font></a>&nbsp;&nbsp; &nbsp;
+<font color="#FFFFFF">
+<a target="_blank" href="https://www.facebook.com/mayhemseven">
+<img border="0" src="../../gfx/facebook-icon-125.jpg"></a></font></a>&nbsp;&nbsp; &nbsp;
+<a target="_blank" href="https://www.pinterest.com/777MayheM777/">
+<font color="#FFFFFF">
+<img border="0" src="../../gfx/pinterest-icon-125-white.jpg"></font></a>&nbsp;&nbsp; &nbsp;
+<a target="_blank" href="https://twitter.com/mayhem7shop">
+<font color="#FFFFFF">
+<img border="0" src="../../gfx/twitter-icon-125-white.jpg"></font></a>&nbsp; &nbsp;&nbsp;
+<a target="_blank" href="../../gamergate/index.html">
+<font color="#FFFFFF">
+<img border="0" src="../../gfx/gamer-gate-125.jpg"></font></a><br>
+<br>
+<font color="#FFFFFF">
+<a target="_blank" href="../../index.html">
+<img border="0" src="../../gfx/game-enhancement-projects-top-02-small.jpg"></a></font></a></p>
+<p>&nbsp;</p>
+<p align="center">
+<a target="_blank" href="https://adultfriendfinder.com/go/g1425770-pct">
+<img border="0" src="../../gfx/aff/aff-005-800.jpg"></a></p>
+<p align="center">
+&nbsp;</p>
+<p align="center">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7422516056996691"
+     crossorigin="anonymous"></script>
+<!-- Standard Banner -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7422516056996691"
+     data-ad-slot="3101750998"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+<p align="center">
+&nbsp;</p>
+<p align="center">
+</p>
+<p align="center">
+</p>
+<p style="margin-right: 6px; margin-left: 6px">
+</p>
+<p style="margin-right: 6px; margin-left: 6px">
+</p>
+<p align="center">
+&nbsp;</p>
+
+</div></center>
+
+</font>
+
+</body>
+
+</html>

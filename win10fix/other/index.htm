@@ -1,0 +1,226 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<title>Windows 10 Fixes - Other</title>
+<meta name="keywords" content="Windows 10, Fix, Fixes, Fixing Windows 10">
+<meta name="description" content="Fixes for Windows 10">
+</head>
+
+<body link="#000000" vlink="#000000" alink="#000000" text="#000000" bgcolor="#FFFFFF">
+
+<center><div style="width: 1077px">
+
+<p align="center">
+<font face="Arial">
+<a target="_blank" href="http://www.skyrim-beautification-project.com/win10fix/other/cortana.jpg">
+<img border="0" src="../../gfx/win10-top.jpg"></a></font><b><font face="Arial" size="6"><br>
+</font> </b><font face="Arial">by Tore Andersen<br>
+<br>
+&nbsp;</font><p style="margin-right: 6px; margin-left: 6px">
+<font face="Impact" size="6">
+OTHER FIXES</font></p>
+<p style="margin-right: 6px; margin-left: 6px">
+<font face="Arial">
+<a href="../index.htm">GENERAL TIPS</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+<a href="../services/index.htm">SERVICES</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+<a href="../cortana/index.htm">CORTANA</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+<a href="../gaming/index.htm">GAMING SPECIFIC</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+<b>OTHER FIXES</b></font></p>
+<p align="left" style="margin-right: 6px; margin-left: 6px">
+<br>
+<font face="Arial">
+Fixes for common errors related to gaming. Listing and fixing all errors in 
+Windows would be a never ending project, so these are just a few of the most 
+common.</font></p>
+<p align="left" style="margin-right: 6px; margin-left: 6px">
+<b><font face="Arial">Visible Windows Task-bar in-game:<br>
+</font></b><font face="Arial">This is a Windows error that happens quite often after hours of use. Windows is
+<i>suppose</i> to hide the task-bar when a full-screen application is 
+running. For the first time in Windows history, this doesn't work very 
+well.<br>
+<b>Fix:</b> Open the Task Manager and restart &quot;Windows Explorer&quot;.<br>
+<br>
+<img border="0" src="../task-bar-fix.jpg"><br>
+<br>
+&nbsp;</font></p>
+<p align="left" style="margin-right: 6px; margin-left: 6px">
+<b><font face="Arial">Corrupted files:<br>
+</font></b><font face="Arial">Windows 10 has a habit of corrupting system files over 
+time. This can result in errors like broken menus, missing icons and such.<br>
+<br>
+<b>1:</b> Open PowerShell as Administrator<br>
+<br>
+<img border="0" src="../powershell-admin.jpg" width="301" height="265"><br>
+<br>
+<b>2:</b> Type the following line and press enter: &quot;SFC /SCANNOW&quot;<br>
+<br>
+<img border="0" src="../powershell-admin-2.jpg" width="548" height="217"><br>
+<br>
+If no issues were found, or if Windows found some, but were able to fixed them, 
+you are done.<br>
+If Windows found issues that it couldn't fix, then you’ll need to run a DISM 
+scan.<br>
+<br>
+<b>3:</b> Type the following line and press enter: &quot;DISM /ONLINE /CLEANUP-IMAGE 
+/RESTOREHEALTH&quot;<br>
+<br>
+<img border="0" src="../powershell-admin-3.jpg" width="495" height="284"><br>
+<br>
+This might take some time. At the end you will get a full report.<br>
+<br>
+<br>
+</font><b><font face="Arial"><br>
+Steam Client: </font></b><font face="Arial"><b>&quot;Could Not Connect to Steam Network&quot; error:</b><br>
+<b>1: </b>Right click the Steam shortcut and select &quot;properties&quot;.<br>
+<b>2:</b> Add &quot; -tcp&quot; at the end of the target command, as shown below. Apply.<br>
+<br>
+<b><img border="0" src="../steam-tcp.jpg" width="363" height="437"><br>
+<br>
+</b>Re-launch Steam.<br>
+<b><br>
+<br>
+<br>
+</b></font><b><font face="Arial">Steam Client: </font></b><font face="Arial"><b>Full-screen video error (Black screen):</b><br>
+If you only see a black screen when playing full-screen video, you might be able 
+to fix it by turning AA off in your graphics drivers. Open the graphic driver 
+settings and select Steam as specific program. Then set AA as 
+&quot;Application-controlled&quot;.<br>
+<b><br>
+<br>
+<br>
+</b></font><b><font face="Arial">Steam Client: </font></b><font face="Arial"><b>Slow video streaming:</b><br>
+If you have slow video streaming, or if the videos keep getting stuck, open these ports in your router.<br>
+TCP/UDP: 27015 - 27040<br>
+TCP/UDP: 3478 - 4380<br>
+If this doesn't help, switch to another server. *The one closest to your 
+physical location is not necessarily the fastest.<br>
+<br>
+<img border="0" src="../steam.jpg"><br>
+<br>
+<br>
+<br>
+</font><b><font face="Arial">Steam Client: </font></b><font face="Arial"><b>Screenshots are not saved:</b><br>
+First check that the Steam Overlay is turned on while in-game.<br>
+<br>
+<img border="0" src="../steam-screenshots.jpg" width="540" height="256"><br>
+<br>
+If Yes, and the screenshot feature still doesn't work, then launch Steam with 
+administrator rights.<br>
+Right-click the Steam client shortcut and go to Compatibility, then check &quot;Run 
+this program as an administrator&quot;.<br>
+<br>
+<img border="0" src="../../tron20/steam-admin.jpg" width="363" height="527"><br>
+<br>
+Stem will warn that it's not a good idea, but it will work just fine. As soon as 
+the screenshot feature works again, you can uncheck the &quot;run as admin&quot; again.<br>
+<br>
+<br>
+<br>
+</font><b><font face="Arial">Steam Client: </font></b><font face="Arial"><b>Disable group notifications 
+(If the settings don't work):</b><br>
+For reasons unknown, Steam sometimes remove the Group notification settings in their 
+updates. After each update, the client is supposed to keeps your setting, so 
+for most people it's not an issue. However, if you reset your cache or reinstall 
+Steam, then you may be stuck with the annoying Group notifications in-game, 
+unless you completely disable Steam overlay.<br>
+<b>Fix: </b>Open the Steam user folder, and open &quot;localconfig.vdf&quot; with Notepad.<br>
+Usually found here: &quot;C:\Program Files (x86)\Steam\userdata\&lt;yourID&gt;\config\localconfig.vdf&quot;<br>
+Find the string, &quot;Notifications_EventsAndAnnouncements&quot; and change the value to 
+&quot;0&quot;. Save. <br>
+That's it.<br>
+*If you have several IDs and don't know which one is yours, just edit the 
+localconfig.vdf file inside all ID folders.</font></p>
+<p align="center"><font face="Arial"><br>
+&nbsp;</font></p>
+<p align="center">&nbsp;</p>
+<font face="Arial">
+<p><font face="Impact" size="6">SUPPORT MAYHEM-7 MODS</font></p>
+
+<p align="center">
+<a target="_blank" href="https://www.patreon.com/mayhem7">
+<font color="#FFFFFF">
+<img border="0" src="../../gfx/support-top-02-small.jpg"></font></a></a></p>
+<p align="center">
+<img border="0" src="../../gfx/skyrim-free-forever-125.jpg">&nbsp;&nbsp; &nbsp;
+<a target="_blank" href="http://steamcommunity.com/id/777mayhem777/">
+<font color="#FFFFFF">
+<img border="0" src="../../gfx/steam-icon-125.jpg"></font></a>&nbsp; &nbsp;&nbsp;
+<a target="_blank" href="https://www.patreon.com/mayhem7">
+<font color="#FFFFFF">
+<img border="0" src="../../gfx/patreon-icon-125.jpg"></font></a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a target="_blank" href="https://discord.gg/p7KbE8e">
+<font color="#FFFFFF">
+<img border="0" src="../../gfx/discord-icon-125-white.jpg"></font></a>&nbsp;&nbsp; &nbsp;
+<a target="_blank" href="https://www.youtube.com/channel/UCVD3Mf8J-kyjOi9q_cl0Zng/videos">
+<font color="#FFFFFF">
+<img border="0" src="../../gfx/youtube-icon-125.jpg"></font></a>&nbsp;&nbsp; &nbsp;
+<a target="_blank" href="https://www.twitch.tv/777mayhem777">
+<font color="#FFFFFF">
+<img border="0" src="../../gfx/twitch-icon-125-white.jpg"></font></a>&nbsp;&nbsp; &nbsp;
+<a target="_blank" href="../../support/index.html">
+<font color="#FFFFFF">
+<img border="0" src="../../gfx/tip-jar-icom-125.jpg"></font></a><br>
+<br>
+<a target="_blank" href="https://www.deviantart.com/mayhem-7/gallery">
+<font color="#FFFFFF">
+<img border="0" src="../../gfx/deviant-icon-125-white.jpg"></font></a>&nbsp;&nbsp;&nbsp;&nbsp;
+<font color="#FFFFFF">
+<a target="_blank" href="https://opensea.io/mayhem-7?search[sortBy]=PRICE&search[sortAscending]=false">
+<img border="0" src="../../gfx/opensea-125-white.jpg"></a></font></a>&nbsp;&nbsp; &nbsp;
+<a target="_blank" href="https://www.instagram.com/777mayhem777/">
+<font color="#FFFFFF">
+<img border="0" src="../../gfx/instagram-icon-125-white.jpg"></font></a>&nbsp;&nbsp; &nbsp;
+<font color="#FFFFFF">
+<a target="_blank" href="https://www.facebook.com/mayhemseven">
+<img border="0" src="../../gfx/facebook-icon-125.jpg"></a></font></a>&nbsp;&nbsp; &nbsp;
+<a target="_blank" href="https://www.pinterest.com/777MayheM777/">
+<font color="#FFFFFF">
+<img border="0" src="../../gfx/pinterest-icon-125-white.jpg"></font></a>&nbsp;&nbsp; &nbsp;
+<a target="_blank" href="https://twitter.com/mayhem7shop">
+<font color="#FFFFFF">
+<img border="0" src="../../gfx/twitter-icon-125-white.jpg"></font></a>&nbsp; &nbsp;&nbsp;
+<a target="_blank" href="../../gamergate/index.html">
+<font color="#FFFFFF">
+<img border="0" src="../../gfx/gamer-gate-125.jpg"></font></a><br>
+<br>
+<font color="#FFFFFF">
+<a target="_blank" href="../../index.html">
+<img border="0" src="../../gfx/game-enhancement-projects-top-02-small.jpg"></a></font></a></p>
+<p>&nbsp;</p>
+<p align="center">
+<a target="_blank" href="https://adultfriendfinder.com/go/g1425770-pct">
+<img border="0" src="../../gfx/aff/aff-h-3-800.jpg"></a></p>
+<p align="center">
+&nbsp;</p>
+<p align="center">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7422516056996691"
+     crossorigin="anonymous"></script>
+<!-- Standard Banner -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7422516056996691"
+     data-ad-slot="3101750998"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+<p align="center">
+&nbsp;</p>
+<p align="center">
+</p>
+<p style="margin-right: 6px; margin-left: 6px">
+</p>
+<p style="margin-right: 6px; margin-left: 6px">
+</p>
+<p align="center">
+</p>
+<p align="center">
+&nbsp;</p>
+
+</div></center>
+
+</body>
+
+</html>
